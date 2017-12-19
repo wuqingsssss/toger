@@ -1,3 +1,6 @@
 image/cache
 system/cache
 system/logs
+update/data/app
+update/data/sql/update-3.1
+20151024.sql
