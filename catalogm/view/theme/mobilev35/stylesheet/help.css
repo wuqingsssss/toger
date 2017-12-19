@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+#column-left h2,#column-left .helpMenu {
+	text-align: left;
+	text-indent: 20px;
+}
+#column-left h2{ 
+	background:#c1ea9e; 
+	width:180px;  
+	height:31px; 
+	line-height:31px; 
+	color:#333;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+}
+#column-left .helpMenu h2 a{color:#ffffff; font-size: 14px;	font-family: "microsoft yahei";}
+#column-left .helpMenu{ border:2px #00a79d solid; margin-bottom: 20px;}
+#column-left .helpMenu p{ background-color:#f1fbe9; line-height:26px; height:26px; border-top:1px #00a79d solid; border-bottom:1px #00a79d solid;color:#666666; font-weight:bold;}
+#column-left .helpMenu ul{ margin:8px 0;}
+#column-left .helpMenu ul li{ background:url(graphic/helpD.gif) no-repeat left; margin-left:20px; line-height:24px; height:24px; width:170px;}
+#column-left .helpMenu ul li a{ color:#666;}
+#column-left .helpMenu ul li a:hover{ color:#6bb130;}
+#column-left .helpMenu ul .active{ color:#6bb130;}

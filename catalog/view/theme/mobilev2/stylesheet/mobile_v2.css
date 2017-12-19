@@ -1,0 +1,171 @@
+/* 对Ionic框架的重定义 */
+body,
+.ionic-body {
+  position: relative;
+  overflow: auto;
+}
+.bar {
+  position: fixed;
+  padding: 0;
+}
+/* Mobile*/
+.visible-phone {
+  display: inherit !important;
+}
+.hidden-phone {
+  display: none !important;
+}
+/*******************************
+             Global
+*******************************/
+.page {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 260px;
+  overflow-x: hidden;
+}
+#content {
+  margin-bottom: 49px;
+}
+#menu #content {
+  margin-top: 0;
+  padding: 0 20px;
+}
+.slider-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.bar .aside-left.title {
+  width: 270px;
+}
+.list a.item {
+  color: #797979;
+}
+.list a.item:hover {
+  color: #00a79d;
+}
+.tab-item .icon {
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: contain;
+  width: 37px;
+  height: 37px;
+  margin-top: 6px;
+  text-indent: -1000em;
+}
+
+.tab-item .icon::before {
+  display: none !important;
+}
+.tab-item .icon.ion-home {
+  background-image: url(graphic/home_normal.png);
+}
+.tab-item .icon.ion-home.select {
+  background-image: url(graphic/home_select.png);
+}
+.tab-item .icon.ion-navicon {
+  background-image: url(graphic/Classification_normal.png);
+}
+.tab-item .icon.ion-navicon.select {
+  background-image: url(graphic/Classification_select.png);
+}
+.tab-item .icon.ion-person {
+  background-image: url(graphic/user_normal.png);
+}
+.tab-item .icon.ion-person.select {
+  background-image: url(graphic/user_select.png);
+}
+.tab-item .icon.ion-bag {
+  background-image: url(graphic/shopping_normal.png);
+}
+.tab-item .icon.ion-bag.select {
+  background-image: url(graphic/shopping_select.png);
+}
+  
+
+
+.bar-default.bar-header .ion-navicon {
+  width: 20px;
+  height: 20px;
+  background: url(graphic/icon_Menu_normal.png) no-repeat center 0;
+  background-size: contain;
+  margin-left: 6px;
+  margin-top: 12px;
+}
+.bar-default.bar-header .ion-navicon::before {
+  display: none;
+}
+.bar .title {
+  width: 100%;
+  font-size: 18px;
+  color: #000;
+}
+.item-divider {
+  background-color: #ECE8E5;
+  color: #696461;
+}
+input.login_form_mobile,
+input.login_form_user,
+input.login_form_password,
+input.login_form_email {
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px 20px;
+}
+input.login_form_mobile {
+  background-image: url("graphic_v2/icon_iphone_normal.png");
+}
+input.login_form_mobile:focus {
+  background-image: url("graphic_v2/icon_iphone_select.png");
+}
+input.login_form_password {
+  background-image: url("graphic_v2/icon_password_normal.png");
+}
+input.login_form_password:focus {
+  background-image: url("graphic_v2/icon_password_select.png");
+}
+input.login_form_email {
+  background-image: url("graphic_v2/icon_email_normal.png");
+}
+input.login_form_email:focus {
+  background-image: url("graphic_v2/icon_email_select.png");
+}
+input.login_form_user {
+  background-image: url("graphic_v2/icon_user_normal.png");
+  background-size: 20px 20px;
+}
+input.login_form_user:focus {
+  background-image: url("graphic_v2/icon_user_select.png");
+}
+.cart_submit .submit .button {
+  overflow: hidden;
+  vertical-align: middle;
+  color: #FFFFFF !important;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 0px;
+/*  text-indent: -1000em; */
+  background: url("graphic_v2/Settlement_normal.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.cart_submit .submit .button:hover,
+.cart_submit .submit .button:active {
+  background-image: url("graphic_v2/Settlement_select.png");
+}
+#cart_total.ix-badge {
+  background: url(graphic_v2/bg.png) no-repeat center center;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9kZXZlbG9wL3FuY2ovY2F0YWxvZy92aWV3L3RoZW1lL21vYmlsZXYyL2xlc3MvbW9iaWxlX3YyLmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUdBO0FBQ0E7RUFDRSxrQkFBQTtFQUNBLGNBQUE7O0FBRUY7RUFDRSxlQUFBO0VBQ0EsVUFBQTs7O0FBR0Y7RUFDRSwyQkFBQTs7QUFFRjtFQUNFLHdCQUFBOzs7OztBQUtGO0VBQ0UsV0FBQTtFQUNBLGNBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBOztBQUVGO0VBQ0UsbUJBQUE7O0FBRUYsS0FBTTtFQUNKLGFBQUE7RUFDQSxlQUFBOztBQUVGO0VBQ0UsVUFBQTtFQUNBLGNBQUE7O0FBRUYsSUFBSyxZQUFXO0VBQ2QsWUFBQTs7QUFTRixLQUNFLEVBQUM7RUFDQyxjQUFBOztBQUVBLEtBSEYsRUFBQyxLQUdFO0VBQ0MsY0FBQTs7QUFNTixTQUFVO0VBR1IsNEJBQUE7RUFDQSw2QkFBQTtFQUNBLHdCQUFBO0VBRUEsV0FBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0VBRUEsb0JBQUE7O0FBVkEsU0FEUSxNQUNQO0VBQVUsd0JBQUE7O0FBYVgsU0FkUSxNQWNQO0VBQ0MsOENBQUE7O0FBRUEsU0FqQk0sTUFjUCxTQUdFO0VBQ0MsOENBQUE7O0FBR0osU0FyQlEsTUFxQlA7RUFDQyx3REFBQTs7QUFFQSxTQXhCTSxNQXFCUCxZQUdFO0VBQ0Msd0RBQUE7O0FBR0osU0E1QlEsTUE0QlA7RUFDQyw4Q0FBQTs7QUFFQSxTQS9CTSxNQTRCUCxXQUdFO0VBQ0MsOENBQUE7O0FBR0osU0FuQ1EsTUFtQ1A7RUFDQyxrREFBQTs7QUFZSixZQUFZLFdBQVk7RUFDdEIsV0FBQTtFQUNBLFlBQUE7RUFDQSxnRUFBQTtFQUNBLHdCQUFBO0VBRUEsZ0JBQUE7RUFDQSxnQkFBQTs7QUFFQSxZQVRVLFdBQVksYUFTckI7RUFBVSxhQUFBOztBQUdiLElBQUs7RUFDSCxXQUFBO0VBQ0EsZUFBQTtFQUNBLFdBQUE7O0FBR0Y7RUFDRSx5QkFBQTtFQUNBLGNBQUE7O0FBTUYsS0FBSztBQUNMLEtBQUs7QUFDTCxLQUFLO0FBQ0wsS0FBSztFQUNILGtCQUFBO0VBRUEsNEJBQUE7RUFDQSxnQ0FBQTtFQUNBLDBCQUFBOztBQUdGLEtBQUs7RUFDSCxzQkFBc0Isb0NBQXRCOztBQUVBLEtBSEcsa0JBR0Y7RUFDQyxzQkFBcUIsb0NBQXJCOztBQUlKLEtBQUs7RUFDSCxzQkFBc0Isc0NBQXRCOztBQUVBLEtBSEcsb0JBR0Y7RUFDQyxzQkFBcUIsc0NBQXJCOztBQUlKLEtBQUs7RUFDSCxzQkFBc0IsbUNBQXRCOztBQUVBLEtBSEcsaUJBR0Y7RUFDQyxzQkFBcUIsbUNBQXJCOztBQUlKLEtBQUs7RUFDSCxzQkFBc0Isa0NBQXRCO0VBQ0EsMEJBQUE7O0FBRUEsS0FKRyxnQkFJRjtFQUNDLHNCQUFxQixrQ0FBckI7O0FBS0osWUFBYSxRQUFRO0VBQ25CLGdCQUFBO0VBQ0Esc0JBQUE7RUFDQSx5QkFBQTtFQUNBLHFCQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBRUEsb0JBQUE7RUFFQSxnQkFBZ0IsMkRBQWhCO0VBQ0EsMEJBQUE7O0FBRUEsWUFoQlcsUUFBUSxRQWdCbEI7QUFBTyxZQWhCRyxRQUFRLFFBZ0JWO0VBQ1Asc0JBQXNCLG1DQUF0Qjs7QUFJSixXQUFXO0VBQ1QsMERBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLHFCQUFBO0VBQ0EsWUFBQTtFQUNBLFdBQUE7RUFDQSwwQkFBQTtFQUVBLGtCQUFBO0VBQ0EsUUFBQTtFQUNBLFdBQUEifQ== */

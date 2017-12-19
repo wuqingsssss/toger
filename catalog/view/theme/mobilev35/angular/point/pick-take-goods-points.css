@@ -1,0 +1,14 @@
+#ztd {
+    bottom: 49px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100110;
+    background: #fff;
+    overflow-y: auto;
+}
+
+#ztd a {
+    display: block;
+}

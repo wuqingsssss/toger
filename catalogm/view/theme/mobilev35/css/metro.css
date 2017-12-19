@@ -1,0 +1,124 @@
+﻿
+.btn.btn-submit{
+    width: 50%;
+    font-family: "微软雅黑",SimHei;
+    font-weight: bold;
+    font-size: 0.3rem;
+    margin: 0.2rem 25%;
+    padding: 0 0.2rem;
+    line-height: 0.5rem;
+	height:0.6rem;
+}
+
+#m-tab > a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  padding: 13px 0;
+  border-bottom: 1px solid transparent;
+}
+#m-tab > a > span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1em;
+}
+#m-tab > a:first-child > span {
+  border-right: 1px solid #ededed;
+}
+#m-tab > a.col-red {
+  border-bottom: 1px solid #e34c0b;
+}
+#m-login,
+#m-metro {
+  padding: 5%;
+width: 90%;
+}
+
+#form-group-metro-captcha > a {
+	height: 0.5rem;
+	line-height: 0.5rem;
+	padding: 0px 0.5em;
+	width: 1.4rem;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.2rem;
+}
+
+#form-group-metro-captcha > .input-group {
+  margin-right: 1.7rem;
+}
+#m-metro .input-group > input {
+    text-indent: 0.2rem;
+    font-size: 0.25rem;
+    line-height: 0.3rem;
+    margin-top: 0.1rem;
+	top:0;
+}
+
+
+#m-metro .input-group > input.captcha {
+	font-size:0.18rem;
+}
+
+#m-metro .form-group {
+    padding-bottom: 10px;
+    height: 0.5rem;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.form-group > .input-group{
+	margin-left: 12%;
+	border-color: #8e6f71;
+}
+
+
+
+.form-group > .input-group-addon.phone {
+    background: transparent url("../images/campaign/phone_icon.png") no-repeat scroll center center / 0.4rem 0.4rem;
+	height: 0.5rem;
+	width : 0.5rem;
+	float : left;
+}
+
+img.logo {
+ 	width:60%;
+	margin-top: 40%;
+}
+
+img.title {
+ 	width:100%;
+	margin-top: 20px;
+	margin-bottom:30px;
+}
+
+img.bg{
+	position:fixed; 
+	top:0; 
+	left:0; 
+	bottom:0; 
+	right:0; 
+	z-index:-1; 
+	width:100%;
+	height:100%;
+}
+
+#sys_vcode{
+	width:1.6rem;
+	height:0.5rem;
+}
+
+#m-metro .error{
+	display:none;
+}
+
+.btn.btn-brown {
+  color: #ffffff;
+  background-color: #8e6f71;
+} 
+
+.btn.btn-orange {
+  color: #ffffff;
+  background-color: #ff6e33;
+} 

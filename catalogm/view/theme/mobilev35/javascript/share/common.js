@@ -1,0 +1,1 @@
+$(function(){$("body>.header>.btn-return").on("click",function(){var a=$(this),b=a.data("return-url");b?location.href=b:history.go(-1)})});

@@ -1,0 +1,43 @@
+
+/*============================== 地图样式 start ============================== */
+.o_map_select li{
+	float: left;
+	width: 97%;
+	font-size: .12rem;
+	padding: 0.05rem 0px 0.1rem 0.1rem;
+	border-bottom: 1px solid #EDEDED;
+	cursor: pointer;
+}
+.ofh {
+    overflow: hidden;
+    background: #fff;
+   
+    color: #333;
+}
+.o_map_gprs{
+	width: 0.10rem;
+	margin-right:.05rem;
+	margin-top: 0.02rem;
+	float: left;
+}
+.o_map_select span{
+	color: #FE912C;
+	float: left;
+}
+.o_map_add{
+	overflow: hidden;
+	border-bottom: 1px solid #EDEDED;
+	width: 100%;
+}
+
+.o_map_specific{
+	padding-left: 0.15rem;
+	color: #999;
+	font-size: .10rem;
+}
+
+.map-indicator{
+	width:0.2rem;
+}
+
+/*============================== 地图样式 end ============================== */

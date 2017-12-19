@@ -1,0 +1,328 @@
+@CHARSET "UTF-8";
+
+#category{ position:relative; z-index:1100; }
+
+	
+	
+.allsort {
+    background: none;
+    float: left;
+    height: 40px;
+    margin-right: 0px;
+    position: relative;
+    width: 211px;
+    z-index:1101;
+}
+.allsort .mt {
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+.allsort .mc{ display:none; }
+	
+
+#o-search .allsort .mt a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+    text-decoration: none;
+}
+#o-search .allsort .mt a:hover{color:#eee; }
+.allsort .mt .extra {
+    float: right;
+	overflow: hidden;
+	width: 30px;
+	height: 40px;
+	background: url(../image/down.png) 0px center no-repeat;
+	display: block;
+}
+
+#category .mc {
+    background: #fff;
+    border: 2px solid #1896E6;
+    border-top: none;
+    overflow: visible;
+    padding: 0px;
+	margin-bottom:20px;
+    width: 207px;
+    
+}
+#category .mc .item {
+    
+    height: 34px;
+    width: 207px;
+}
+
+#category .mc .fore {
+    border-top: medium none;
+}
+#category .mc span {
+    display: block;
+    position: relative;
+    width: 203px;
+    z-index: 1;
+}
+#category .mc h3 {
+    background: none;
+	
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 20px;
+	margin:0px;
+    width: 160px;
+}
+#category .mc h3 a:link, .mc h3 a:visited {
+    color: #333333;
+	font-size:12px;
+}
+#category .mc h3 a:hover, .mc h3 a:active {
+    color: #1896E6;
+    font-weight: bold;
+}
+#category .mc s {
+    background: url("graphic/arrow.png") no-repeat scroll transparent;
+    display: block;
+    height: 9px;
+    left: 182px;
+    position: absolute;
+    top: 13px;
+    width: 5px;
+}
+#category .mc .item .i-mc {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    display: none;
+    left: 182px;
+    overflow: hidden;
+    position: absolute;
+    top: 41px;
+    width: 790px;
+    z-index:1120;
+    box-shadow: 3px 3px 6px #c2c2c2;
+}
+#category .mc .item dt {
+    color: #CC0000;
+    font-weight: bold;
+    padding: 3px 6px 0 0;
+}
+#category .mc .item dd {
+    overflow: auto;
+    padding: 3px 0 0;
+}
+#category .mc .subitem {
+    float: left;
+    min-height: 370px;
+    padding: 0 4px 20px 18px;
+    width: 770px;
+}
+#category .mc .subitem dl {
+    border-top: 1px solid #FFEFD7;
+    overflow: hidden;
+    padding: 6px 0;
+}
+#category .mc .subitem .fore {
+    border-top: medium none;
+}
+#category .mc .subitem dt {
+    float: left;
+    line-height: 22px;
+    text-align: left;
+    width: 328px;
+}
+#category .mc .subitem dd {
+    float: left;
+    width: 730px;
+}
+#category .mc .subitem em {
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    height: 14px;
+    line-height: 14px;
+    margin: 4px 0;
+    padding: 0 8px;
+}
+#category .mc .subitem dt a {
+    color: #1896E6;
+    text-decoration: none;
+}
+#category .mc .subitem dd a {
+    white-space: nowrap;
+    font-size: 12px;
+    font-family: 宋体;
+}
+.allsort .fr {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-bottom: -2000px;
+    padding-bottom: 2010px;
+    width: 176px;
+}
+.allsort .fr dl {
+    padding-bottom: 0;
+}
+.allsort .fr a {
+    color: #666666;
+}
+.allsort .brands {
+    padding: 6px 8px;
+    width: 160px;
+}
+.allsort .brands em {
+    float: left;
+    width: 80px;
+}
+.allsort .brands dd {
+    line-height: 20px;
+    padding-top: 6px;
+}
+.allsort .brands-book em {
+    width: 160px;
+}
+.allsort .promotion {
+    padding: 6px 8px;
+    width: 160px;
+}
+.allsort .promotion dd {
+    line-height: 20px;
+    padding-top: 6px;
+}
+
+.allsorthover {
+    background-position: 0 -166px;
+}
+.allsorthover .mt .extra {
+    background-position: -274px -190px;
+}
+.allsorthover .mc {
+    display: block;
+}
+.allsort .hover span {
+    width: 160px;
+    z-index: 13;
+}
+
+.allsort .hover s {
+    display: none;
+}
+.allsort .hover .i-mc {
+    display: block;
+    z-index: 12;
+}
+.allsort .close {
+    background: url("../image/bg2011112401.png") repeat scroll -192px -88px transparent;
+    cursor: pointer;
+    height: 19px;
+    left: 760px;
+    position: absolute;
+    top: 6px;
+    width: 19px;
+    z-index: 14;
+}
+.allsort-beta {
+    display: none;
+}
+.allsort #virtual .i-mc {
+    top: 160px;
+}
+.allsort #virtual .subitem {
+    height: 240px;
+    min-height: 240px;
+}
+
+#category .allsorthover .mc{ display:block; }
+
+#category .mc .subitem {
+    min-height: 280px;
+}
+
+#category .mc .subitem dl {
+    padding: 0;
+    margin:0;  
+}
+
+#category .allsort .fr {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-bottom: -2000px;
+    padding-bottom: 2010px;
+    width: 176px;
+}
+#category .allsort .fr dl {
+    padding-bottom: 0;
+}
+#category .allsort .fr a {
+    color: #666666;
+}
+#category .allsort .brands {
+    padding: 6px 8px;
+    width: 160px;
+}
+#category .allsort .brands em {
+    float: left;
+    width: 80px;
+}
+#category .allsort .brands dd {
+    line-height: 20px;
+    padding-top: 6px;
+}
+#category .allsort .brands-book em {
+    width: 160px;
+}
+#category .allsort .promotion {
+    padding: 6px 8px;
+    width: 160px;
+}
+#category .allsort .promotion dd {
+    line-height: 20px;
+    padding-top: 6px;
+}
+#category .mc .extra {
+    background: none;   
+    padding: 3px 8px;
+}
+
+
+#category .allsorthover {
+    background-position: 0 -166px;
+}
+#category .allsorthover .mt .extra {
+    background:url("../image/up.png") 0px center no-repeat;
+}
+#category .allsorthover .mc {
+    display: block;
+}
+#category .allsort .hover span {
+    width: 160px;
+    z-index: 13;
+}
+
+
+#category .allsort .hover s {
+    display: none;
+}
+#category .allsort .hover .i-mc {
+    display: block;
+    z-index: 12;
+}
+
+#category .allsort .hover h3 {
+    background: #fff;
+    border:1px solid #ccc;
+    border-right: none;
+    overflow: hidden;
+    box-shadow: 0px 3px 3px #c2c2c2;
+}
+
+
+#category .allsort-beta {
+    display: none;
+}
+#category .allsort #virtual .i-mc {
+    top: 160px;
+}
+#category .allsort #virtual .subitem {
+    height: 240px;
+    min-height: 240px;
+}

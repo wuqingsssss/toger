@@ -1,0 +1,54 @@
+body > .j-wrapper {
+}
+body > .j-wrapper > .j-banner {
+  background-color: #E5E5E5;
+}
+body > .j-wrapper > .j-banner > .j-banner-item {
+  padding: 0%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+}
+body > .j-wrapper > .j-banner > .j-banner-item img{width:100%;}
+body > .j-wrapper > .j-food > .j-food-item {
+  padding-top: 62.8125%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+}
+body > .j-wrapper > .j-food > .j-food-item > .j-food-url {
+  position: absolute;
+  top: 8.70646766%;
+  height: 55.97014925%;
+}
+body > .j-wrapper > .j-food > .j-food-item > .j-food-url img {
+width:100%;
+  position: relative;
+  top: -15.55555556%;
+}
+body > .j-wrapper > .j-food > .j-food-item > .j-buy-btn {
+  position: absolute;
+  top: 83.83084577%;
+  left: 8.125%;
+  width: 30%;
+  height: 8.45771144%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+body > .j-wrapper > .j-food > .j-food-item > .j-buy-btn > img {
+  width: 100%;
+  height: auto;
+}
+body > .j-wrapper > .j-intro {
+  padding: 5px;
+  color: #362E2B;
+}
+body > .j-wrapper > .j-intro > h2 {
+}
+body > .j-wrapper .j-buy-over {
+  background-image: url("img/buy-over.jpg");
+}
+body > .j-wrapper .j-buy-active {
+  background-image: url("img/buy-active.jpg");
+}

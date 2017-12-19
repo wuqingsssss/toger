@@ -1,0 +1,136 @@
+@CHARSET "UTF-8";
+
+#m-func > .text-center {
+    line-height: 44px;
+}
+
+#m-func.module.with-bottom {
+    margin-bottom: 10px;
+}
+#m-func.module {
+    background-color: #FFF;
+}
+
+#m-func > .hor-list {
+    font-size: 0px;
+    border-top: 1px solid #E5E5E5;
+}
+
+#m-func > .hor-list > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+#m-func > .hor-list > li:first-child > a {
+    border-left: medium none;
+}
+
+#m-func > .hor-list > li > a {
+    display: block;
+    line-height: 44px;
+    border-left: 1px solid #E5E5E5;
+    text-align: center;
+    font-size: 12px;
+}
+
+#m-func i.icon.icon-exchange {
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/icon-exchange.png");
+    background-size: 100% 100%;
+    margin-bottom: 2px;
+}
+
+#m-func i.icon.icon-charge {
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/icon-charge.png");
+    background-size: 100% 100%;
+    margin-bottom: 2px;
+}
+
+#exchange .form-group .input-group {
+    margin:10px 10px;
+}
+
+#exchange .btn-submit {
+    display: block;
+    margin: 0px 10px 0px;
+    border-radius: 4px;
+    color: #FFF;
+    line-height: 44px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #b5c52f;
+}
+
+#m-charge > ul {
+    margin: 10px 10px 0px;
+    font-size: 0px;
+	text-align: center;
+}
+
+#m-charge{
+	width:100%;
+	height:100%;
+	background-color:#FFF;
+}
+
+#m-charge > ul > li.active {
+    border: 1px solid #CA445C;
+    background: transparent url("../images/bg-active.png") no-repeat scroll right bottom / 14px 14px;
+    color: #CA445C;
+    position: relative;
+}
+#m-charge > ul > li {
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    border: 1px solid #E5E5E5;
+    padding: 4px 0px;
+    min-width: 76px;
+    color: #A0A0A0;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#m-charge > ul > li > div {
+    line-height: 22px;
+}
+
+#m-charge #info{
+	line-height: 22px;
+	margin: 20px 15px;
+}
+
+#m-payment > div {
+    background-color: #FFF;
+    line-height: 44px;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+#m-payment .order_pay{
+	margin-top: 0px;
+}
+
+
+#m-payment .order_p_way {
+	padding: 0px 0px;
+}
+   
+#m-payment .order_p_list li{
+	line-height: 0.3rem;
+}
+
+#content{
+	height:100%;
+}
+
+#m-payment #payment{
+	background-color: #EDEDED;
+}

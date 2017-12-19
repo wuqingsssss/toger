@@ -1,0 +1,165 @@
+     .cover{ background:#000; opacity:0.7; background-size:cover; width:100%; height:100%; position:fixed; top:0; left:0; right: 0; bottom: 0; z-index:100120; }
+ 
+     .baozheng{padding: 0 2% 0 2%}
+
+     .baozheng .product>img{ width: 130px;}
+
+     .baozheng div{ overflow: hidden;margin-top:20px;}
+
+     .baozheng img{width: 145px; height: 122px; float: left;}
+
+     .baozheng p{ float: right;width: 160px;margin-top: 20px;}
+
+     .oth{ width: 96%; margin-left: 2%;margin-top: 15px; margin-bottom: 90px;}
+
+     .hongbao{display: none; background: url(image/guang.png);background-size:296px 206px; width: 296px;height: 206px; position: absolute; left: 50%;top: 50%; z-index: 100; margin-left: -146px; margin-top: -103px;}
+     
+     .hongbao img{ position: absolute; bottom: 50px; left: 120px;}
+     
+     .close{ width: 80px; height: 100px;}
+
+     .open{ width: 80px; height: 130px;}
+
+     /* red红包的样式 */
+  
+     .red{ background-size: 240px 225px; width: 240px; height: 225px; position: absolute; top: 300px;left: 50%; margin-left: -120px; margin-top: -112px; z-index: 100121;}
+
+     .bg{ width: 100%; height: 100%; z-index: 1;
+         -webkit-animation-iteration-count: 2;/* 动画无限播放 */
+         -webkit-animation-timing-function:step-start;/* 马上跳到动画每一结束桢的状态 */ }
+
+     .bao{ width: 130px; height: 140px; position: absolute; bottom: 55px; left: 55px;z-index: 2;
+         -webkit-animation-iteration-count: 2;/* 动画无限播放 */
+         -webkit-animation-timing-function:step-start;/* 马上跳到动画每一结束桢的状态 */ }
+     
+     .baobao{-webkit-animation-name: baobao;
+            -webkit-animation-duration: 500ms;}
+      
+
+     @-webkit-keyframes baobao{
+      0%{transform:rotate(0deg)}
+      20%{transform:rotate(20deg)}
+      60%{transform:rotate(0deg)}
+      70%{transform:rotate(-20deg)}
+      100%{transform:rotate(0deg)}
+     }
+
+     @-webkit-keyframes red-bg{
+      0%{transform:rotate(0deg)}
+      30%{transform:rotate(90deg)}
+      60%{transform:rotate(180deg)}
+      80%{transform:rotate(-90deg)}
+      100%{transform:rotate(0deg)}
+     }
+
+     .red-bg{
+      -webkit-animation-name: red-bg;
+                    -webkit-animation-duration: 500ms;
+     }
+     
+     @-webkit-keyframes baobao1{
+      0%{transform:scale(1.0)}
+      30%{transform:scale(0.8)}
+      60%{transform:scale(0.5)}
+      80%{transform:scale(0.8)}
+      100%{transform:scale(1.0)}
+     }
+     .b1,.b2,.b3,.b4,.b5,.b6,.b7{ z-index: -1;}
+     .b1{position: absolute; 
+     	top: 105px; 
+     	left: 105px;
+     	width: 23px; height: 30px;
+      -webkit-animation-iteration-count: 1;/* 动画无限播放 */
+      -webkit-animation-timing-function:step-start;/* 马上跳到动画每一结束桢的状态 */
+        }
+      .b2{position: absolute;
+     	top: 105px; 
+     	left: 105px;
+     	width: 23px; height: 25px;
+     	transform:sacle(1,0.5);
+     	transition:all 0.2s;
+        -moz-transition:all 0.2s; /* Firefox 4 */
+        -webkit-transition:all 0.2s; /* Safari and Chrome */
+        -o-transition:all 0.2s; 
+        }
+
+      .b3{position: absolute;
+     	top: 105px; 
+     	left: 105px;
+     	width: 12px; height: 16px;
+     	transform:sacle(1,0.5);
+     	transition:all 0.2s;
+        -moz-transition:all 0.2s; /* Firefox 4 */
+        -webkit-transition:all 0.2s; /* Safari and Chrome */
+        -o-transition:all 0.2s; 
+        }
+      .b4{position: absolute;
+     	top: 105px; 
+     	left: 105px;
+     	width: 24px; height: 25px;
+     	transform:sacle(1,0.5);
+     	transition:all 0.2s;
+        -moz-transition:all 0.2s; /* Firefox 4 */
+        -webkit-transition:all 0.2s; /* Safari and Chrome */
+        -o-transition:all 0.2s; 
+        }
+      .b5{position: absolute;
+     	top: 105px; 
+     	left: 105px;
+     	width: 14px; width: 14px;
+     	transform:sacle(1,0.5);
+     	transition:all 0.2s;
+        -moz-transition:all 0.2s; /* Firefox 4 */
+        -webkit-transition:all 0.2s; /* Safari and Chrome */
+        -o-transition:all 0.2s; 
+       }
+      .b6{position: absolute;
+     	top: 105px; 
+     	left: 105px;
+     	width: 30px; height: 30px;
+     	transform:sacle(1,0.5);
+     	transition:all 0.2s;
+        -moz-transition:all 0.2s; /* Firefox 4 */
+        -webkit-transition:all 0.2s; /* Safari and Chrome */
+        -o-transition:all 0.2s; 
+        }
+       
+     .b7{position: absolute;
+     	top: 105px; 
+     	left: 105px;
+     	width: 23px; height: 24px;
+     	transform:sacle(1,0.5);
+     	transition:all 0.2s;
+        -moz-transition:all 0.2s; /* Firefox 4 */
+        -webkit-transition:all 0.2s; /* Safari and Chrome */
+        -o-transition:all 0.2s; 
+        }
+   
+
+    .b11{position: absolute; left: 0; top: 20px;-webkit-transform:sacle(0.5)}
+
+     
+    .b22{position: absolute;left: 240px; top: 80px;-webkit-transform:sacle(0.5)}
+    
+    .b33{position: absolute;left: 200px; top: -50px; -webkit-transform:sacle(0.5)}
+     
+    .b44{position: absolute;left: 170px; top: -70px; -webkit-transform:sacle(0.5)}
+    
+    .b55{position: absolute;left: 30px; top: -40px; -webkit-transform:sacle(0.5)}
+    
+    .b66{position: absolute;left:193px; top: -124px; -webkit-transform:sacle(0.5);}
+   
+     .b77{position: absolute;left: 210px; top: 60px; -webkit-transform:sacle(0.5)}
+
+
+     @-webkit-keyframes b11{
+      0%{position: absolute;top: 105px; left: 105px; opacity: 1.0}
+      20%{position: absolute; left: 0; top: 20px; opacity: 0.6}
+      70%{position: absolute; left: 0; top: 20px; opacity: 0.6}
+      100%{position: absolute;left: -20px; top: 0px;opacity: 0.0}
+     }
+
+     .touming{ opacity: 0.8;}
+	 .touming2{ opacity: 0.6;}
+     .touming3{opacity: 0.2;}
+     .touming4{opacity: 0;}

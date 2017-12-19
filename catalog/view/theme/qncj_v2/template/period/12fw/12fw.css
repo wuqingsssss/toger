@@ -1,0 +1,97 @@
+body {
+  background: #ffffff url("img/bg.jpg") center top repeat-y;
+  width: 100%;
+  min-width: 1000px;
+  max-width: none;
+}
+#header {
+  height: 119px;
+}
+#container {
+  margin: 0 auto;
+  width: auto;
+  min-width: 1000px;
+  max-width: 1280px;
+  background-color: white;
+}
+#content {
+  width: 100%;
+}
+#j-content > #j-banner {
+  padding-top: 36.09375%;
+  height: 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  overflow: hidden;
+  position: relative;
+}
+#j-content > #j-banner > .j-buy-btn {
+	
+ position: absolute;
+bottom: 0;
+left: 2%;
+background-repeat: no-repeat;
+background-size: 100% auto;
+}
+#j-content > #j-banner > .j-buy-btn2 {
+position: absolute;
+bottom: 0;
+left: 25%;
+background-repeat: no-repeat;
+background-size: 100% auto;
+}
+
+#j-content > #j-banner img {
+  height: 40px;
+}
+
+
+#j-content > .j-item {
+  padding-top: 60.15625%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+#j-content > .j-item > .j-food-url {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#j-content > .j-item > .j-food-url > img {
+  width: 203.17460317%;
+  height: 156.25%;
+}
+#j-content > .j-item > .j-buy-btn {
+  position: absolute;
+  bottom: 17.4025974%;
+  left: 15.234375%;
+  width: 16.875%;
+  height: 4.93506494%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+#j-content > .j-item > .j-buy-btn > img {
+  width: 100%;
+  height: auto;
+}
+#j-content > .j-item > .j-buy-btn.j-buy-over {
+  background-image: url("img/buy-over.jpg");
+}
+#j-content > .j-item > .j-buy-btn.j-buy-active {
+  background-image: url("img/buy-active.jpg");
+}
+#j-content > #j-intro {
+  padding: 0 124px 20px;
+  color: #362E2B;
+  font-size: 24px;
+}
+#j-content > #j-intro > h2 {
+  line-height: 2.5em;
+  font-size: 30px;
+}
+#j-banner {
+  background-image: url("img/banner.jpg");
+}

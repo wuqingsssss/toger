@@ -1,0 +1,99 @@
+#j-banner {
+  width: 100%;
+}
+#j-banner img {
+  width: 100%;
+  height: auto;
+}
+#j-rule {
+  padding-top: 12px;
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", "Microsoft YaHei", sans-serif;
+  font-size: 0;
+}
+#j-rule > div {
+  position: relative;
+}
+#j-rule > div > div {
+  display: inline-block;
+  vertical-align: bottom;
+}
+#j-rule > div > div.j-rule-left {
+  width: 654px;
+  color: #362e2b;
+}
+#j-rule > div > div.j-rule-left > h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 88px;
+}
+#j-rule > div > div.j-rule-left > div {
+  border-right: 1px solid #afabaa;
+  padding: 0 65px 0 50px;
+  font-size: 18px;
+}
+#j-rule > div > div.j-rule-left > div strong {
+  font-weight: bold;
+}
+#j-rule > div > div.j-rule-right {
+  width: 345px;
+  text-align: center;
+}
+#j-rule > div > div.j-rule-right > div:first-child {
+  padding-bottom: 30px;
+}
+#j-foods {
+  padding-top: 12px;
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", "Microsoft YaHei", sans-serif;
+  font-size: 0;
+}
+#j-foods > h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 88px;
+  color: #362e2b;
+}
+#j-foods > ul {
+  width: 1008px;
+  margin-left: -10px;
+}
+#j-foods > ul > li {
+  display: inline-block;
+  width: 156px;
+  margin-left: 12px;
+  font-size: 14px;
+  vertical-align: top;
+  height: 150px;
+}
+#j-foods > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#j-foods > ul > li > a > img {
+  width: 100%;
+  height: 100%;
+}
+#j-foods > ul > li > a > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: url(../img/bg-food-title.png) left top no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+}
+#j-foods > ul > li > a > span > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#j-foods > ul > li > a > span > span:first-child {
+  bottom: 20px;
+}

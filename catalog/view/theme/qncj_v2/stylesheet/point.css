@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+ /*
+#ztd{  padding: 7px; background: rgba(0, 0, 0, 0.298039); width:510px; height:310px;  }
+#ztd .ztd-logo{ float:left; width:150px; margin-top:150px;  }
+#ztd .ztd-content{ display: block; height: 100%; background: rgb(255, 255, 255); overflow:hidden;  }
+#ztd .ztd-content-right{ margin-left:170px; }
+#ztd .ztd-logo{ border-right:1px dotted #ccc; float:left; margin-right:25px; }
+
+#ztd .option-title{
+	  width:240px; padding-left:10px; display:inline-block; height:30px; border:1px solid #eee; 
+	  line-height:30px; color:#8c6a52;  
+	  top: 180px; left: 204px; display: none; background: rgb(255, 255, 255);
+  }
+ 
+ 
+
+ #ztd .logo{ float:left; width:150px; margin-top:150px;   }
+
+ 
+ #ztd .logo{ border-right:1px dotted #ccc; float:left; margin-right:25px; }
+ #ztd .option-title{
+  width:240px; padding-left:10px; display:inline-block; height:30px; border:1px solid #eee; 
+  line-height:30px; color:#8c6a52; 
+  top: 180px; left: 204px; display: none; background: rgb(255, 255, 255);
+ }
+ 
+ 
+
+
+
+*/
+
+#ztd .point-list{ margin:0; padding:0; list-style:none; }
+#ztd .point-list li.item{ position:relative; line-height:30px; height:30px;  }
+ 
+#ztd .point-list li.item .detail{
+  	position:absolute;
+  	right:-20px; 
+  	top:0;
+ }
+ 
+ .point-item{
+	width:400px;
+}
+
+.point-item .td1{ width:100px; }

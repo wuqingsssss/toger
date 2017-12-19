@@ -1,0 +1,127 @@
+/* cart by kevin */
+#cart {
+    background: url("../image/ico-cart.png") 10px center no-repeat ;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+	margin:0px;
+    width: 242px;
+}
+#cart li {
+    float: left;
+    text-align: center;
+    border-left: 1px solid #65952d;
+}
+#cart li.heading:hover {background: url("../image/ico-cart.png") 9px center no-repeat #f4aa0b;}
+#cart li:hover{background: #f4aa0b;}
+#cart a{ 
+	display:block; 
+	line-height:40px; 
+	font-size: 14px; 
+	color: #fff; 
+	text-decoration: none;
+	font-family: Helvetica Neue, Verdana,"microsoft yahei";
+}
+
+#cart .heading {
+    padding: 0 0 0 40px;
+    position: relative;
+    width: 120px;
+    z-index: 20;
+}
+#cart .heading b {
+    color: #066FC9;
+    padding: 0 4px;
+}
+#cart .fore2 {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 60px;
+}
+#cart .fore2 a {
+    color: #FFFFFF;
+}
+#cart .content {
+	clear: both;
+	display: none;
+	position: relative;
+	top: -1px;
+	padding: 8px;
+	min-height: 30px;
+	width:400px;
+	right:100px;
+	border: 2px solid #999;
+	background: #FFF;
+	z-index: 100;
+	
+	
+}
+#cart{ position:relative; z-index:101; }
+
+#cart .content {
+	position:absolute;
+	right:7px;
+	top:36px;
+}
+#cart.active .content {
+	display: block;
+}
+
+#cart.active .content {
+	display: block;
+}
+#cart .cart {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 5px;
+}
+#cart .cart td {
+	color: #000;
+	vertical-align: top;
+	padding: 10px;
+	border-bottom: 1px solid #EEEEEE;
+}
+#cart .name a{color: #333; font-size: 12px; line-height: 20px;}
+#cart .cart .image {
+	width: 40px;
+	height: 40px;
+}
+#cart .cart .image img {
+	border: 1px solid #EEEEEE;
+	text-align: left;
+}
+#cart .cart .name small {
+	color: #666;
+}
+#cart .cart .quantity {
+	text-align: right; font-family: arial;
+}
+#cart .cart td.total {
+	text-align: right; font-family: arial;
+}
+#cart .cart .remove {
+	text-align: right;
+}
+#cart .cart .remove img {
+	cursor: pointer;
+	vertical-align: middle;
+}
+#cart table.total {
+	border-collapse: collapse;
+	padding: 5px;
+	float: right;
+	clear: left;
+	margin-bottom: 5px;
+}
+#cart table.total td {
+	color: #000;
+}
+#cart .content .checkout {
+	text-align: right;
+	clear: both;
+}
+#cart .empty {
+	/* padding-top: 50px; */
+	text-align: center;
+}

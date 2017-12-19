@@ -1,0 +1,1 @@
+<img src="index.php?route=information/contact/qrcode&chl=<?php $this->load->model('tool/image'); echo $this->model_tool_image->getImageQrcode($sharedata['linkparent']); ?>" width="290"/>

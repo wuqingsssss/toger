@@ -1,0 +1,179 @@
+/* 
+filename:template_common.less
+description:存在theme固定会使用到的标准化的样式代码;
+*/
+
+/* 商品组合推荐实现样式 */
+.recommend .mt{padding-bottom:0;}
+.recommend .tab{margin-bottom:0;}
+.recommend .tab-sub{padding:8px 0 3px;}
+.recommend .master{float:left;position:relative;width:165px;height:216px;background:#fff;border:solid #D8D7D3;
+border-width:1px 0 1px 1px;padding:0 35px 0 5px;text-align:center; padding-top:5px;
+}
+.recommend .master .icon-add{position:absolute;top:45px;right:0;width:30px;height:30px;background-position:-181px 0; 
+background-image: url(graphic/icon2011111801.png);
+background-repeat: no-repeat;}
+.recommend .suits{float:left;position:relative;width:540px;height:216px;background:#fff;border:solid #D8D7D3;border-width:1px 1px 1px 0;overflow-y:hidden;overflow-x:auto; padding-top:5px;}
+.recommend .suits .container{ width:4000px;}
+.recommend .suits ul{float:left;height:206px; margin:0; padding:0; }
+.recommend .suits li{float:left;width:166px;padding:0 7px; border-bottom:0; text-align:center;}
+.recommend .suits li .p-name{ height:36px; }
+.recommend .infos{float:right;width:100px;padding:0 5px 8px 0;}
+.recommend .infos div{margin-bottom:5px;}
+.recommend .infos .p-name a{color:#005aa0;font-weight:bold;}
+
+.recommend .infos .p-saving{color:#008000;}
+.recommend .btn-buy{float:left;width:70px;height:21px;text-align:center;line-height:21px;color:#fff;background-position:-141px -121px;}
+#group{background:#FFF9EB;border:solid #F3E7C7;border-width:0 1px 1px;padding:5px;}
+
+.compare-info {
+	border-collapse: collapse;
+	width: 100%;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+}
+.compare-info thead td, .compare-info thead tr td:first-child {
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	background: #F7F7F7;
+	text-align: left;
+}
+.compare-info tr td:first-child {
+	color: #000000;
+	font-weight: bold;
+	text-align: right;
+}
+.compare-info td {
+	padding: 7px;
+	width: 20%;
+	color: #4D4D4D;
+	text-align: center;
+	vertical-align: top;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+.compare-info .name a {
+	font-weight: bold;
+}
+.compare-info .price-old {
+	font-weight: bold;
+	color: #F00;
+	text-decoration: line-through;
+}
+.compare-info .price-new {
+	font-weight: bold;
+}
+/* wishlist */
+.wishlist-product table {
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+}
+.wishlist-product td {
+	padding: 7px;
+}
+.wishlist-product thead td {
+	color: #4D4D4D;
+	font-weight: bold;
+	background-color: #F7F7F7;
+	border-bottom: 1px solid #DDDDDD;
+}
+.wishlist-product thead .remove, .wishlist-product thead .image, .wishlist-product thead .cart {
+	text-align: center;
+}
+.wishlist-product thead .name, .wishlist-product thead .model, .wishlist-product thead .stock {
+	text-align: left;
+}
+.wishlist-product thead .quantity, .wishlist-product thead .price, .wishlist-product thead .total {
+	text-align: right;
+}
+.wishlist-product tbody td {
+	vertical-align: top;
+	border-bottom: 1px solid #DDDDDD;
+}
+.wishlist-product tbody .remove {
+	vertical-align: middle;
+}
+.wishlist-product tbody .remove, .wishlist-product tbody .image, .wishlist-product tbody .cart {
+	text-align: center;
+}
+.wishlist-product tbody .name, .wishlist-product tbody .model, .wishlist-product tbody .stock {
+	text-align: left;
+}
+.wishlist-product tbody .quantity, .wishlist-product tbody .price, .wishlist-product tbody .total {
+	text-align: right;
+}
+.wishlist-product tbody .price s {
+	color: #F00;
+}
+
+/* 网站地图们默认实现样式 */
+.sitemap-info {
+	overflow: auto;
+	margin-bottom: 40px;
+}
+.sitemap-info .left {
+	float: left;
+	width: 48%;
+}
+.sitemap-info .right {
+	float: left;
+	width: 48%;
+}
+
+/* 商品详情页面商品属性实现样式 */
+.attribute {
+	border-collapse: collapse;
+	width: 100%;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+}
+.attribute thead td, .attribute thead tr td:first-child {
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	background: #F7F7F7;
+	text-align: left;
+}
+.attribute tr td:first-child {
+	color: #000000;
+	font-weight: bold;
+	text-align: right;
+	width: 20%;
+}
+.attribute td {
+	padding: 7px;
+	color: #4D4D4D;
+	text-align: center;
+	vertical-align: top;
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+/* 返回顶部按钮*/
+a#go-top {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: #aaa url(../image/gotop.png) 8px -57px no-repeat;
+	margin-bottom: 15px;
+	outline: 0 none;
+	text-indent: -9999em;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	line-height: 25px;
+	color: #999;
+	right: 30px;
+	z-index: 1000;
+}

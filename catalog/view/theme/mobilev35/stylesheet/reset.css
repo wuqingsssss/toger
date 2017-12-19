@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; } /* 去掉各Table  cell 的边距并让其边重合 */
+
+
+
+/* https://github.com/sofish/typo.css */
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+	color: #333;
+	background: #fff;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section {
+	margin: 0;
+	padding: 0;
+}
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio, canvas, video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+input, select, textarea {
+	font-size: 1em;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th {
+	text-align: inherit;
+}
+
+/* 去除默认边框 */
+fieldset, img {
+	border: 0;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+	display: block;
+}
+
+/* 块/段落引用 */
+blockquote {
+	margin: 1em 4em 1em 2em;
+	padding: 0.6em 1em;
+	background: #f1f1f1;
+}
+blockquote blockquote {
+	padding: 0 0 0 1em;
+	margin-left: 2em;
+	border-left: 0.4em solid #ddd;
+}
+
+
+/* 一致的 del 样式 */
+
+address, caption, cite, code, den, em, th, var {
+	font-style: normal;
+	font-weight: 500;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th {
+	text-align: left;
+}
+
+/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
+h1, h2, h3, h4, h5, h6 {
+	font: 100%/1 Verdana, sans-serif;
+	font-weight: bold; 
+}
+
+q:before, q:after {
+	content: '';
+}
+
+/* 统一上标和下标 */
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+	text-decoration: underline;
+}
+
+/* 默认不显示下划线，保持页面简洁 */
+ins, a {
+	text-decoration: none;
+}
+
+/* 标记，类似于手写的荧光笔的作用 */
+mark {
+	background: #fffdd1;
+}
+
+/* 代码片断 */
+pre, code {
+	font-family: 'Courier New', Courier, serif;
+}
+pre {
+	border: 1px solid #ddd;
+	border-left-width: 0.4em;
+	background: #fbfbfb;
+	padding: 10px;
+}
+
+/* 底部印刷体、版本等标记 */
+small {
+	font-size: 0.8em;
+	color: #888;
+}
+
+/* (en) avoid visible outlines on DIV containers in Webkit browsers --From YAML */
+div { outline: 0 none; }
+
+body { font: 100%/1.5 "Times New Roman", "Microsoft Yahei", serif; }
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+button, input, select, textarea {
+	font: 100%/1.5 "Times New Roman", "Microsoft Yahei", serif;
+}
+
+/* @Responsive Design */
+img{ max-width:100%; /* 设定图片最大宽度 缩放页面时图片根据父元素同比例缩放 */  }

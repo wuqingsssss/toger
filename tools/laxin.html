@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en-us" id="d" class="no-js"> <!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta charset="utf-8">
+    <title>青年菜君</title>
+    <style>
+    .text{
+        margin: 0 auto;
+        width:100%;
+        padding-top:10px;
+    }
+    ul{margin: 0;padding: 0;}
+    .title{text-align: center;}
+    .text input{width:100%;border: 1px #00a99c solid;height:30px;line-height: 30px;}
+     li{list-style: none;position: relative;margin:10px;}
+     .btn{cursor: pointer; text-align: center; background-color:#00a99c;color:#fff;width:80px;height:20px;border-radius: 3px; padding:5px;position: absolute;right:1px;top:0;}
+     li a{color:#666;font-size:13px;}
+     .title2{background-color:#efefef;color:#00a99c;padding: 0;margin: 0 }
+    </style>
+</head>
+<body>
+<div>
+     <ul>
+      <li class="title">拉新业绩快速查询工具
+     </li>
+      <li class='text'>
+      <input type="text" id="keyword" name="keyword" value="" placeholder="请输入要查询的拉新代码" class="requiredkeyword" />
+      
+      </li>
+      <li>
+       <a class="btn" onclick="check_result();" >查询</a>
+      </li>
+      <li>
+      <span class="error"></span>
+     </li>
+     </ul>
+      <ul style="margin-top:30px;border: 1px #e5e5e5 solid;border-radius: 3px;">
+     <li id="msg_keyword" class="title2">
+          查询结果
+     </li>
+     <li id="logdata">
+     </li></ul>
+     
+</div>
+<script type="text/javascript" src="http://www.qingniancaijun.com.cn/assets/js/jquery/jquery-1.7.2.min.js"></script>
+<script>
+function checkweb_log()
+{var keyword =$('#keyword').val();
+	var url='/apiv3/index.php?route=weblog/s/find&callback=?';//
+	$("#logdata").html('');
+	 console.log(url);
+	 $.getJSON(url,
+			 {
+             'keyword':keyword, 
+             'logger':'log_order', 
+             'message':1, 
+             },
+			 function(e) {
+            	 
+            	// $("#logdata").html(e);
+		 console.log(e);
+		 if(e.status==1)
+			 {
+			 
+			 
+		     	$("#msg_keyword").html(e.message);
+		     	
+		     	 for(i in e.data)
+		     	{
+		     		$("#logdata").html($("#logdata").html()+JSON.stringify(e.data[i])+'<br/>');
+		     		 
+		     	}
+		     	
+		     	
+			    $("#msg_keyword").css('color','green');
+			 }
+		 else
+			 {
+			 
+		          $("#msg_keyword").html(e.message);
+		          $("#msg_keyword").css('color','red');
+			 }
+    });    	
+	    	
+}
+
+$('#keyword').keydown(function (e) {
+    if (e.keyCode == 13) {
+    	check_result();
+    }
+});
+</script>
+</body>
+</html>

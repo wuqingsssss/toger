@@ -1,0 +1,248 @@
+// Component:		  Variables
+//
+// Description:		Define all variables
+//
+// =============================================================================
+
+@ns: ~"ix-";
+
+// Global variables
+// =============================================================================
+
+// Black - White - Gray
+// -----------------------------------------------------------------------------
+
+@black:           #000;
+@white:           #fff;
+
+@gray-darker:     lighten(@black, 13.5%); // #222
+@gray-dark:       lighten(@black, 20%);   // #333
+@gray:            lighten(@black, 33.5%); // #555
+@gray-light:      lighten(@black, 60%);   // #999
+@gray-lighter:    lighten(@black, 93.5%); // #eee
+
+
+// body
+// -----------------------------------------------------------------------------
+
+@body-bg:               @white;
+@text-color:            @gray-dark;
+
+
+// Brand Colors
+// -----------------------------------------------------------------------------
+//@global-primary:	    #0e90d2; // #157EFB; //#428bca;
+@global-primary:      #B51426;
+@global-secondary:    lighten(@global-primary, 15%);
+@global-success:	    #5eb95e; // #53D76A; //#5cb85c;
+@global-warning:	    #F37B1D; // #FD9426; // #f0ad4e;
+@global-danger:		    #dd514c; // #FC3159; //#da314b;
+@global-info:         @global-secondary;
+
+// Links
+// -----------------------------------------------------------------------------
+
+@link-color:              @global-primary;
+@link-hover-color:        darken(@link-color, 15%);
+
+@global-contrast-color:	  @white;
+
+
+// Backgrounds & Borders
+// -----------------------------------------------------------------------------
+
+@global-background:				@white;
+@global-border:					  #ddd;
+
+
+// Typography
+// =============================================================================
+
+// Font family
+// -----------------------------------------------------------------------------
+
+
+// Font  size
+// -----------------------------------------------------------------------------
+@global-font-size:				1.6rem; //16px
+@global-line-height:			1.6;
+@font-size-base:          @global-font-size;
+
+@line-height-base:        @global-line-height;
+@line-height-computed:    floor(@font-size-base * @line-height-base); // 2
+
+
+@font-size-xxs:           @global-font-size - 0.6; // 10px - 1rem
+@font-size-xs:            @global-font-size - 0.4; // 12px
+@font-size-sm:            @global-font-size - 0.2; // 14px
+//@font-size-default:     @global-font-size;       // 16px
+@font-size-lg:            @global-font-size + 0.2; // 18px
+@font-size-xl:            @global-font-size + 0.8; // 24px
+@font-size-xxl:           @global-font-size * 2;   // 32px
+@font-size-xxxl:          @global-font-size * 2 + 1; // 42px
+
+
+
+// Border radius
+// -----------------------------------------------------------------------------
+@global-radius:         0;
+@radius-normal:         2px;
+@radius-lg:             5px;
+@radius-sm:             1px;
+
+@global-rounded:         1000px;
+@global-square:           0;
+
+// Responsive variables
+// =============================================================================
+
+// Breakpoint
+// -----------------------------------------------------------------------------
+
+@breakpoint-small:            640px;  // 0 - 640px
+@breakpoint-medium:           1024px; // 641 - 1024px
+@breakpoint-large:            1280px; // 1025 - 1280px
+@breakpoint-xl:               1440px; // 1281 - 1440px
+@breakpoint-xxl:              1920px; // 1441 -1920px
+
+@breakpoint-small-max:        @breakpoint-small;
+@breakpoint-md:               @breakpoint-small-max; // legacy var, DO NOT USE IT
+
+@breakpoint-medium-min:       (@breakpoint-small + 1);
+@breakpoint-medium-max:       @breakpoint-medium;
+
+@breakpoint-large-min:        (@breakpoint-medium + 1);
+@breakpoint-large-max:        @breakpoint-large;
+
+@breakpoint-xl-min:           (@breakpoint-large + 1);
+@breakpoint-xl-max:           @breakpoint-xl;
+
+@breakpoint-xxl-min:          (@breakpoint-xl + 1);
+@breakpoint-xxl-max:          @breakpoint-xxl;
+
+
+// Media Queries
+// NOTE '~' in the beginning - media query must be escaped
+// -----------------------------------------------------------------------------
+
+@screen:        ~"only screen";
+
+@landscape:     ~"@{screen} and (orientation: landscape)";
+@portrait:      ~"@{screen} and (orientation: portrait)";
+
+@small-up:      ~"@{screen}";
+@small-only:    ~"@{screen} and (max-width: @{breakpoint-small-max})";
+
+@medium-up:     ~"@{screen} and (min-width:@{breakpoint-medium-min})";
+@medium-only:   ~"@{screen} and (min-width:@{breakpoint-medium-min}) and (max-width:@{breakpoint-medium-max})";
+
+@large-up:      ~"@{screen} and (min-width:@{breakpoint-large-min})";
+@large-only:    ~"@{screen} and (min-width:@{breakpoint-large-min}) and (max-width:@{breakpoint-large-max})";
+
+@xl-up:         ~"@{screen} and (min-width:@{breakpoint-xl-min})";
+@xl-only:       ~"@{screen} and (min-width:@{breakpoint-xl-min}) and (max-width:@{breakpoint-xl-max})";
+
+@xxl-up:        ~"@{screen} and (min-width:@{breakpoint-xxl-min})";
+@xxl-only:      ~"@{screen} and (min-width:@{breakpoint-xxl-min}) and (max-width:@{breakpoint-xxl-max})";
+
+
+// Grid system
+// -----------------------------------------------------------------------------
+
+@grid-columns:              12;
+@grid-gutter:               1rem;   // Columns padding
+@grid-gutter-md:            1.5rem; // 15px
+@grid-max-width:            1000px;
+
+
+// =============================================================================
+// Z-index
+// =============================================================================
+
+
+// =============================================================================
+// Badge variables
+// =============================================================================
+
+@badge-color:                 #fff;
+@badge-link-hover-color:      #fff;
+@badge-bg:                    @gray-light;
+
+@badge-active-color:          @link-color;
+@badge-active-bg:             #fff;
+
+@badge-font-weight:           bold;
+@badge-line-height:           1;
+@badge-border-radius:         0;
+
+@badge-primary-bg:			@global-primary;
+@badge-secondary-bg:        @global-secondary;
+@badge-success-bg:			@global-success;
+@badge-warning-bg:			@global-warning;
+@badge-danger-bg:			@global-danger;
+
+// END
+
+@baseFontSize:75%;
+
+@fontSizeXXLarge:@baseFontSize*2;
+@fontSizeXLarge:@baseFontSize*1.5;
+@fontSizeLarge:@baseFontSize*1.25;
+@fontSizeSmall:@baseFontSize*0.85;
+@fontSizeMini:@baseFontSize*0.75;
+	
+@sansFontFamily:'Helvetica Neue', Arial, Helvetica, sans-serif;
+@serifFontFamily:Georgia, 'Times New Roman', Times, serif;
+@monoFontFamily:Menlo, Monaco, 'Courier New', monospace;
+@baseFontFamily:'Microsoft Yahei','宋体',Arial;
+
+@bodyBackground:#fff;
+@inputBackground:#F8F8F8;
+
+@dominantColor:#00a79d;
+
+@white:#fff;
+@grayLight:#eee;
+@darkLight:#ddd;
+@dark:#000;
+
+@textColor:#000;
+
+@linkColor:lighten(@dominantColor,10%);    
+@linkColorHover:@dominantColor;
+
+@priceTextColor:#ddd;
+@priceTextColorHover:#EB2F64;
+
+@pricePromoTextColor:#f00;
+@pricePromoTextColorHover:#EB2F64;
+
+@baseLineHeight:20px;
+
+@headingsFontWeight:bold;
+@headingsColor:inherit;
+@headingsFontFamily:@serifFontFamily;
+
+@baseBorder:#ddd;
+@inputBorder:#ccc;
+@tableBorder:#ddd;
+@btnBorder:#EEE;
+@imageBorder:#ddd; 
+
+
+@paddingLarge:10px 0px 10px 5px;  //use for module heading
+@paddingSmall:2px 10px; //use for table
+@paddingMini:1px 6px; //use for form control
+@paddingContent:10px; //use for content
+
+@productGridColumn:5;
+
+@pageWidth:1000px;
+@contentsWidth:960px;
+
+
+
+@primary-color:#0AA39A;
+
+@bg-light-color:#F9F6E8;
+

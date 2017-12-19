@@ -1,0 +1,269 @@
+@charset "utf-8";
+/*========================= 美食节专题页 start =========================*/
+/*公共定义start*/
+.p-r {
+    position: relative;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.combo-color {
+    color: #c9455b;
+    font-weight: bold;
+}
+
+.original-color {
+    color: #d8d8d8;
+}
+/*公共定义end*/
+/*内容背景*/
+.m-content-box {
+    background: #f9dd42;
+}
+/*活动banner*/
+.m-zt-banner {
+}
+
+.m-zt-banner img {
+    width: 100%;
+}
+
+/*内容列表*/
+.m-zt-overbalanced {
+    width: 100%;
+    position: relative;
+}
+
+.m-zt-distance {
+    
+    overflow: hidden;
+}
+
+.zt-cover-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.m-zt-sign {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.m-zt-sign img {
+    width: 100%;
+}
+
+.m-zt-distance img {
+    width: 100%;
+}
+
+.m-zt-overbalanced .m-zt-overbalanced-l,.m-zt-overbalanced .m-zt-overbalanced-r {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.m-zt-overbalanced-l img,.m-zt-overbalanced-r img {
+    width: 100%;
+}
+
+.m-zt-cart-btn {
+    background: #c9455b;  
+    text-align: center;
+    color: #fff;
+    width: 60%;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.m-zt-overbalanced-l .tit-p,.m-zt-overbalanced-r .tit-p {
+    font-size: 14px;
+    color: #676767;
+    font-weight: bold;
+}
+
+.m-zt-gm img {
+    width: 100%;
+}
+
+.m-zt-particulars {
+    overflow: hidden;
+}
+
+.m-zt-particulars .particulars-box {
+    margin: 0 10px;
+}
+/* .m-zt-particulars .particulars-box ul{} */
+.m-zt-particulars .particulars-box ul li {
+    width: 50%;
+    float: left;
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.m-zt-particulars .particulars-box ul li img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.m-zt-buy-btn {
+    background: #c9455b;
+    text-align: center;
+    color: #fff;
+    width: 60%;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 8px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.active {
+    margin-right: 10px;
+}
+
+.m-zt-price {
+    margin: 10px 0;
+}
+
+/*超值套餐价格*/
+.m-zt-overbalance {
+}
+
+.m-zt-overbalance span {
+    display: block;
+}
+
+.m-zt-overbalance span.combo {
+    color: #c9455b;
+    font-weight: bold;
+}
+
+.m-zt-overbalance span.original {
+    color: #d8d8d8;
+    margin: 8px 0;
+}
+/*尾部banner*/
+.m-zt-footer-banner {
+    margin-top: 10px;
+}
+
+.m-zt-footer-banner img {
+    width: 100%;
+}
+
+/*=================== 屏幕适配 ===================*/
+/* 兼容iphone6 */
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2) {
+   
+
+    .m-zt-overbalance span.original {
+        margin: 2px 0;
+    }
+
+    .m-zt-cart-btn {
+        padding: 5px 10px;
+        border-radius: 8px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .m-zt-buy-btn {
+        padding: 5px 10px;
+        border-radius: 8px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .fz-16 {
+        font-size: 18px;
+    }
+    .zt-cover-bg {
+        
+        display: none;
+    }
+}
+/* 兼容iphone5 */
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+    .m-zt-sign {
+        top: 50px;
+    }
+
+    .m-zt-overbalance span.original {
+        margin: 2px 0;
+    }
+
+    .m-zt-cart-btn {
+        padding: 5px 10px;
+        border-radius: 8px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .m-zt-buy-btn {
+        padding: 5px 10px;
+        border-radius: 8px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .fz-16 {
+        font-size: 15px;
+    }
+    .zt-cover-bg {
+        
+        display: none;
+    }
+}
+/*4 4s*/
+@media only screen and (device-height :480px) and (-webkit-device-pixel-ratio:2) {
+    .m-zt-sign {
+        top: 56px;
+    }
+
+    .m-zt-overbalance span.original {
+        margin: 2px 0;
+    }
+
+    .m-zt-cart-btn {
+        padding: 4px 8px;
+        border-radius: 5px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .m-zt-buy-btn {
+        padding: 4px 8px;
+        border-radius: 5px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .fz-16 {
+        font-size: 15px;
+    }
+    .zt-cover-bg {
+        
+        display: none;
+    }
+}
+/*========================= 美食节专题页 end =========================*/

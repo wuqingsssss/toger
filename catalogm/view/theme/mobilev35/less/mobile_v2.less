@@ -1,0 +1,214 @@
+@import "snippet/mixin.less";
+
+/* 对Ionic框架的重定义 */
+body,
+.ionic-body {
+  position: relative;
+  overflow: auto;
+}
+.bar {
+  position: fixed;
+  padding: 0;
+}
+/* Mobile*/
+.visible-phone {
+  display: inherit !important;
+}
+.hidden-phone {
+  display: none !important;
+}
+/*******************************
+             Global
+*******************************/
+.page {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 300px;
+  overflow-x: hidden;
+}
+#content {
+  margin-bottom: 49px;
+}
+#menu #content {
+  margin-top: 0;
+  padding: 0 20px;
+}
+.slider-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.bar .aside-left.title {
+  width: 270px;
+}
+
+
+
+@linkColor:#797979;
+@linkColorHover:#00A79D;
+
+
+.list{
+  a.item{
+    color:@linkColor;
+
+    &:hover{
+      color:@linkColorHover;
+    }
+  }
+}
+
+
+.tab-item .icon{
+  &::before{ display: none !important; }
+
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: contain;
+
+  width:37px;
+  height:37px;
+  margin-top:6px;
+
+  text-indent: -1000em;
+
+
+  &.ion-home{
+    background-image: url(graphic/home_normal.png);
+
+    &:hover{
+      background-image: url(graphic/home_select.png);
+    }
+  }
+  &.ion-navicon{
+    background-image: url(graphic/Classification_normal.png);
+
+    &:hover{
+      background-image: url(graphic/Classification_select.png);
+    }
+  }
+  &.ion-person{
+    background-image: url(graphic/user_normal.png);
+
+    &:hover{
+      background-image: url(graphic/user_select.png);
+    }
+  }
+  &.ion-bag{
+    background-image: url(graphic/shopping_normal.png);
+
+    &:hover{
+//      background-image: url(graphic/shopping_select.png);
+    }
+  }
+}
+
+
+
+
+
+.bar-default.bar-header .ion-navicon{
+  width:20px;
+  height:20px;
+  background:url(graphic/icon_Menu_normal.png) no-repeat center 0;
+  background-size: contain;
+
+  margin-left:6px;
+  margin-top:12px;
+
+  &::before{ display: none; }
+}
+
+.bar .title {
+  width: 100%;
+  font-size: 18px;
+  color: #000;
+}
+
+.item-divider{
+  background-color: #ECE8E5;
+  color:#696461;
+}
+
+
+
+
+input.login_form_mobile,
+input.login_form_user,
+input.login_form_password,
+input.login_form_email{
+  padding-left:40px;
+
+  background-repeat: no-repeat;
+  background-position:10px center;
+  background-size: 20px 20px;
+}
+
+input.login_form_mobile{
+  background-image: url("graphic_v2/icon_iphone_normal.png");
+
+  &:focus{
+    background-image:url("graphic_v2/icon_iphone_select.png");
+  }
+}
+
+input.login_form_password{
+  background-image: url("graphic_v2/icon_password_normal.png");
+
+  &:focus{
+    background-image:url("graphic_v2/icon_password_select.png");
+  }
+}
+
+input.login_form_email{
+  background-image: url("graphic_v2/icon_email_normal.png");
+
+  &:focus{
+    background-image:url("graphic_v2/icon_email_select.png");
+  }
+}
+
+input.login_form_user{
+  background-image: url("graphic_v2/icon_user_normal.png");
+  background-size: 20px 20px;
+
+  &:focus{
+    background-image:url("graphic_v2/icon_user_select.png");
+  }
+}
+
+
+.cart_submit .submit .button {
+  overflow: hidden;
+  vertical-align: middle;
+  color: #FFFFFF !important;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height:50px;
+  border: none;
+  padding: 0px;
+
+  text-indent: -1000em;
+
+  background: url("graphic_v2/Settlement_normal.png") no-repeat center center;
+  background-size: 100% 100%;
+
+  &:hover,&:active{
+    background-image: url("graphic_v2/Settlement_select.png");
+  }
+}
+
+#cart_total.ix-badge{
+  background: url(graphic_v2/bg.png) no-repeat center center;
+  width:25px;
+  height:25px;
+  display: inline-block;
+  padding:5px;
+  color:#fff;
+  background-size: 100% 100%;
+
+  position:absolute;
+  top:0px;
+  right:10px;
+}
+

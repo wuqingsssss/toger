@@ -1,0 +1,102 @@
+.classify_con{
+	overflow: hidden;
+	width: 100%;
+}
+.classify_con_l{
+	width: 1.8rem;
+	
+}
+.classify_l_nav{
+	font-size: 0.3rem;
+}
+.classify_l_nav a{
+	display: block;
+	text-align: center;
+	line-height: 1rem;
+	height: 1rem;
+	background: #ededed;
+	border-bottom: 1px solid #dcdcdc;
+	border-right:1px solid #dcdcdc;
+}
+.classify_con_l .classify_l_nav a.on{
+	background:#FFFFFF;
+	color:#fe912c;
+	border-right: none;
+	text-decoration:none;
+}
+.classify_con_rdiv{
+	width: 4.3rem;
+}
+.classify_con_r{
+	width: 4.3rem;
+}
+.classify_con .classify_con_r li{
+	width: 4.3rem;
+	float:left;
+	overflow: hidden;
+}
+.c_column_title{
+	width: 4.2rem;
+	height: 0.8rem;
+	font-size: 0.26rem;
+	background: #ededed;
+	line-height: 0.8rem;
+	padding-left: 10px;
+}
+.c_column_dish{
+	width: 4.3rem;
+	overflow: hidden;
+	padding: 10px 0px;
+	border-bottom: 1px solid #ededed;
+}
+.c_dish_img{
+	width: 1.5rem;
+	height: 1.4rem;
+}
+.c_dish_information{
+	width: 56%;
+	margin-left: 10px;
+}
+.c_dish_name{
+	font-size: 0.28rem;
+	margin-bottom: 5px;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 2.6rem;
+}
+.c_dish_pointer{
+	width: 100%;
+	margin-bottom: 5px;
+}
+.c_dish_pointer img{
+	width: 0.35rem;
+	float: left;
+	margin-right: 2px;
+}
+.c_dish_price{
+	width: 100%;
+}
+.c_dish_price span{
+	color: #FE912C;
+	float: left;
+}
+.c_current_price{
+	font-size: 0.35rem;
+	margin-right: 5px;
+}
+.c_original_price{
+	font-size: 0.25rem;
+	margin-top: 5px;
+	text-decoration: line-through;
+}
+.c_dish_introduction{
+	float: left;
+	width: 70%;
+}
+.c_dish_cart img{
+	width: 0.6rem;
+	float: right;
+	margin-top: 14px;
+}

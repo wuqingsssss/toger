@@ -1,0 +1,32 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.mt-20{
+	margin-top: 0.2rem;
+}
+.close{
+	margin-top: 0.2rem;
+	width: 80px;
+	height: 24px;
+	background: url(images/close.png) center center no-repeat;
+	outline: none;
+	border: none;
+	background-size: 80% 90%;
+	float: right;
+}
+.welfare{
+	position: relative;
+}
+.welfare_b{
+	position: absolute;
+	margin-top: 8%;
+	margin-left: 40%;
+	width: 1.3rem;
+	z-index: 100;
+}

@@ -1,0 +1,91 @@
+@charset "utf-8";
+/*========================= 美食节专题页 start =========================*/
+/*公共定义start*/
+.p-r {
+    position: relative;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.combo-color {
+    color: #c9455b;
+    font-weight: bold;
+}
+
+.original-color {
+    color: #d8d8d8;
+}
+/*公共定义end*/
+.m-content-box{}
+.m-content-box section{ position: relative;}
+.m-content-box section img{ width: 100%;}
+
+
+.m-sl-btn {
+	background: #c9455b;
+	padding: 6px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	width: 30%;
+	font-weight: bold;
+	display: block;
+}
+.pos-btn-01{ position: absolute; right: 19%;bottom: 40px;}
+.pos-btn-02{ position: absolute; right: 19%;bottom: 16px;}
+.pos-btn-03{ position: absolute; left: 19%; bottom: 40px;}
+.pos-btn-04{ position: absolute; right: 19%; bottom: -12px; z-index: 2;}
+.pos-btn-05{ position: absolute; left: 19%; bottom: 0px;}
+.pos-btn-06{ position: absolute; right: 19%; bottom: 15px;}
+.pos-btn-07{ position: absolute; left: 19%; bottom: 46px;}
+
+/*=================== 屏幕适配 ===================*/
+/* 兼容iphone6p */
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2) {
+	.m-sl-btn {
+		width: 26%;
+		font-size: 18px;		
+	}
+	.pos-btn-01{ right: 20%;bottom: 48px;}
+	.pos-btn-02{ right: 20%;bottom: 18px;}
+	.pos-btn-03{ left: 20%; bottom: 50px;}
+	.pos-btn-04{ right: 20%; bottom: -12px; z-index: 2;}
+	.pos-btn-05{ left: 20%; bottom: 0px;}
+	.pos-btn-06{ right: 20%; bottom: 22px;}
+	.pos-btn-07{ left: 20%; bottom: 58px;}
+}
+/* 兼容iphone5 */
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+	.m-sl-btn {
+		width: 26%;
+		font-size: 16px;		
+	}
+	.pos-btn-01{ right: 20%;bottom: 36px;}
+	.pos-btn-02{ right: 20%;bottom: 14px;}
+	.pos-btn-03{ left: 20%; bottom: 36px;}
+	.pos-btn-04{ right: 20%; bottom: -12px; z-index: 2;}
+	.pos-btn-05{ left: 20%; bottom: 0px;}
+	.pos-btn-06{ right: 20%; bottom: 15px;}
+	.pos-btn-07{ left: 20%; bottom: 44px;}
+}
+/*4 4s*/
+@media only screen and (device-height :480px) and (-webkit-device-pixel-ratio:2) {
+   
+	.m-sl-btn {
+		width: 26%;
+		font-size: 16px;		
+	}
+	.pos-btn-01 {right: 20%;bottom: 34px;}
+	.pos-btn-02{ right: 20%;bottom: 14px;}
+	.pos-btn-03{ left: 20%; bottom: 36px;}
+	.pos-btn-04{ right: 20%; bottom: -12px; z-index: 2;}
+	.pos-btn-05{ left: 20%; bottom: 0px;}
+	.pos-btn-06{ right: 20%; bottom: 15px;}
+	.pos-btn-07{ left: 20%; bottom: 44px;}
+}
+
+
+/*========================= 美食节专题页 end =========================*/

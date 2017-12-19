@@ -1,0 +1,197 @@
+@CHARSET "UTF-8";
+body{position:static;display:block;}
+/*全局样式*/
+#lbs ul{margin: 0;padding: 0;}
+#lbs li{list-style: none;}
+
+#lbs .hide{display:none;}
+
+/*搜索*/
+.box-title{width:100%;text-align: center;height:36px;line-height:36px;   font-size: 18px;color:#000;position: relative;}
+.box-title .close{position: absolute;right:5px;}
+
+.lbs-box{
+position:fixed;
+top: 0px;
+bottom: 49px;
+width: 100%;
+padding: 0px;
+margin: 0px;
+border: 0px #00a794 solid;
+left: 0px;
+overflow:auto;
+z-index:5;
+background-color: #fff;
+}
+
+.lbs-title{
+	background-color: #ebe9e5;width:98%;height:42px;padding: 1%;margin-bottom: 6px;
+	padding-top: 5px;position: relative;
+}
+.lbs-title-dw{
+	     position:absolute;
+	     width:34px;height:34px;
+         background: url(../image/lbs/dingwei_normal.png) no-repeat;
+         background-color:#fff;
+		 background-size:34px 34px;
+		 cursor: pointer;
+		 z-index: 5;
+}
+.lbs-title-dw:hover{
+           background: url(../image/lbs/dingwei_hilight.png) no-repeat;
+            background-size:33px 33px;
+}   
+.lbs-keyword{
+         padding-left:35px;
+         padding-right:35px;
+         float:left;	     
+         position: relative;
+    width:100%;
+    color:#c0bebe;
+    display: block;
+    }
+    
+    
+.lbs-keyword input{margin:0px;border-radius: 5px;  color:#c0bebe;width:100%;height:32px;border-style: solid;border-width: 1px;px;border-color: #c8c3c0;font-size:18px;
+display: block;
+ }
+.tab-list-keyword{
+       position: absolute;
+       top:32px;
+       width:90%;
+       z-index:5;
+       font-size: 16px;
+       background-color: #fff;
+       border:1px #ebe9e5 solid; 
+}
+
+
+.tab-list-keyword li{height: 30px;line-height: 30px; cursor: pointer;overflow: hidden;}
+.tab-list-keyword li:hover{
+     background-color: #ebe9e5;
+}
+.lbs-title-sb{
+        position:absolute;
+        right:5px;
+        width:34px;
+	    height:34px;overflow:hidden;
+	    background: url(../image/lbs/search_normal.png) no-repeat;
+        background-color:#fff;
+		background-size:34px 34px;
+		cursor: pointer;
+		z-index: 5;
+}
+.lbs-title-sb:hover{
+           background: url(../image/lbs/search_hilight.png) no-repeat;
+           background-size:33px 33px;
+}
+/*filterBox*/
+.filterBox{
+    clear: both;float: none;font-size: 13px;margin-bottom: 6px;
+overflow: hidden;
+}
+
+#filterBox li a {
+  color: #6F616B;
+  text-decoration: none;
+}
+
+
+#filterBox li a.activate{
+    color:#00a794;
+    text-decoration:none;
+    cursor:default;
+}.dl-horizontal{
+	position: relative;width:100%;
+}
+
+.dl-horizontal dt{
+    width:50px;float: left;  margin-left:5px;color: #6F616B;
+    position: absolute;left:5px;
+}
+.dl-horizontal dd{
+    margin-left:45px;float:none;clear:both;
+}
+.dl-horizontal dd li{float:left;display: inline-block;
+  *display: inline;
+  padding-right: 5px;
+  padding-left: 5px;
+  *zoom: 1;}
+
+dl {
+  margin-bottom: 20px;float: none;clear:both;
+}
+
+
+/*配送区域*/
+.lbs-body1{float: none;clear:both;}
+
+/*.lbs-body{max-height: 400px;overflow-y:auto;bottom: 0px;}*/
+.lbs-body{bottom: 0px;}
+
+.lbs-body-title{
+	background-color: #ebe9e5;
+	color:#00a794;
+	width:98%;
+	height:36px;
+	line-height: 36px;
+	font-size: 18px;
+	vertical-align:middle;
+	overflow: hidden;
+	position: relative;
+}
+
+.lbs-body-title img{border:none;height:28px;float:left;margin-right: 5px;padding-top: 10px;}
+
+.ztd-tleft {position: absolute;right: 15px;top:5px;font-size: 13px;}
+.ztd-tleft a{color:#00a99c;}
+.ztd{padding: 10px;
+  border-top: 1px #ebe9e5 solid;
+}
+.ztd-title{
+	height:26px;
+	color:#6f616b;
+    padding: 0px 5px 5px 28px;
+	font-size: 18px;
+	line-height: 26px;
+	background: url(../image/lbs/1_11.png) no-repeat;
+     background-size:9px 18px;
+     background-position:0 4px ;
+	cursor: pointer;
+	position: relative;
+	}
+.ztd-km{position: absolute;right: 4px;top:4px;font-size: 16px;color:#9b9897;}
+	
+.ztd .ztd-info{display: none;}
+.ztd.act .ztd-info{display: block;}
+.ztd.act .ztd-title{
+	 background: url(../image/lbs/1_12.png) no-repeat;
+background-size:9px 18px;
+ background-position:0 4px ;
+}
+.ztd-info span{
+	font-size: 16px;
+color: #b1afaf;
+clear: both;
+float: none;
+display: block; 
+padding-left:28px;
+position: relative;
+
+}
+.lbs-body-sb {
+	position:absolute;right: 10px;top:-10px;
+	border-radius: 5px; 
+	width:84px;
+	height:28px;
+background-color:#00a99c;
+color:#fff;
+line-height: 28px;
+font-size: 16px;
+text-align: center;
+cursor: pointer;
+border: none;
+}
+
+#pager{list-style: none;float: left;width:100%;text-align: center;}
+#pager a{color: #00A794;font-size: 18px;text-decoration:none;}

@@ -1,0 +1,65 @@
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+form{    background: #ffffff;}
+#m-head {
+  position: relative;
+  padding-top: 27.6%;
+}
+#m-head > .head-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+#m-head > .content {
+  position: absolute;
+  top: 50%;
+  margin-top: -33px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+#m-head > .content > .avatar {
+  padding-bottom: 10px;
+}
+#m-head > .content > .avatar > img {
+  width: 40px;
+  height: 40px;
+}
+#m-profile > div:not(:first-child) {
+  border-top: 1px solid #ededed;
+}
+#m-profile > div {
+  padding: 0 10px;
+}
+#m-profile > div > div {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 44px;
+  font-size: 15px;
+}
+#m-profile > div.gender > div:last-child > div {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 44px;
+  width: 100px;
+}
+#m-profile > div.gender > div:last-child > div > i {
+  width: 25px;
+  height: 25px;
+}
+.but-submit {
+	padding-top: 30px;
+	margin: auto;
+	width: 96%;
+}
+.but-submit button{
+	background: #e44c0b;
+	color: #FFFFFF;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	line-height:44px;
+	width:100%;
+	font-size:16px;
+}

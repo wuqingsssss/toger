@@ -1,0 +1,68 @@
+/*
+Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+
+/*body
+{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	color: #222;
+	background-color: #fff;
+}
+
+ol,ul,dl
+{
+	*margin-right:0px;
+    padding:0 40px;
+}*/
+
+
+body { font-size: 13px; }
+
+body blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 18px;
+  border-left: 5px solid #ddd;
+}
+body p { margin-bottom: 10px; }
+body blockquote p {
+  margin-bottom: 0;
+  /*font-size: 16px;*/
+  font-weight: 300;
+  line-height: 22.5px;
+}
+body blockquote small {
+  display: block;
+  line-height: 18px;
+  color: #999999;
+}
+body blockquote small:before {
+  content: '\2014 \00A0';
+}
+body blockquote.pull-right {
+  float: right;
+  padding-left: 0;
+  padding-right: 15px;
+  border-left: 0;
+  border-right: 5px solid #eeeeee;
+}
+body blockquote.pull-right p,
+body blockquote.pull-right small {
+  text-align: right;
+}
+body blockquote:before,
+body blockquote:after {
+  content: "";
+}
+
+body ol,
+body ol > li { list-style: decimal; }
+body ol,
+body ul { padding-left: 20px; }
+
+body ul,
+body ul > li { list-style: disc; }
+
+body strong { font-weight: bold; font-size: 14px; }
+body em { font-style: italic; }

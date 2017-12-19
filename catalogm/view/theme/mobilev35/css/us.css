@@ -1,0 +1,75 @@
+.us-version {
+	background:url(../images/logo-blue.png) center center no-repeat;
+	background-size:180px;
+	background-color:#ffffff;
+	height:160px;
+	margin-bottom:20px;
+}
+.us-version > span {
+	display:inline-block;
+	padding-top:120px;
+	color:#a0a0a0;
+}
+.us-content {
+}
+.us-content > a {
+	display:block;
+	line-height:44px;
+	background-color:#ffffff;
+	margin-bottom:1px;
+	text-indent:10px;
+	color:#222222;
+	position:relative;
+}
+.us-content > a:after {
+	content: " ";
+    display: block;
+	background:url(../images/icon-next.png) top left no-repeat;
+	background-size:8px;
+	width:8px;
+	height:14px;
+	position:absolute;
+	right:10px;
+	top:15px;
+	z-index:99;
+}
+.but-submit{
+	padding-top:30px;
+	margin:auto;
+	width:96%;
+}
+
+/*order_success椤甸潰鏂板鏍峰紡寮�*/
+.order-suc{
+	padding:0.25rem 1.0rem 0.25rem 0.25rem;
+	position:relative;
+	line-height:0.4rem;
+	height:1.2rem;
+}
+.order-suc li.img-cartoon{
+	position:absolute;
+	right:0.1rem;
+	top:0.1rem;
+}
+.img-cartoon img{
+	width:0.8rem;
+}
+.order-add li{
+	background-color:#ffffff;
+	margin-top:1px;
+	padding:0.2rem;
+	line-height:0.4rem;
+}
+.order-add li.order-addname{
+	position:relative;
+	padding-left:35px;
+	margin-top:10px;
+	letter-spacing:0px;
+}
+.order-addname img{
+	position:absolute;
+	width: 0.5rem;
+	left: 0.1rem;
+	top: 0.3rem;
+}
+/*order_success椤甸潰鏂板鏍峰紡缁撴潫*/

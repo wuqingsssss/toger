@@ -1,0 +1,22 @@
+<html>
+<head><meta http-equiv="content-type" content="text/html; charset=gbk">
+	<title>百付宝 - 您安全可信赖的支付工具</title>
+</head>
+<body>
+
+<form action="o2o_paycode.php" method="get">
+商品名称: <input type="text" name="goods_name" required="required" />*必填<br/> 
+商品描述: <input type="text" name="goods_desc"/><br/>
+商品在商户网站上的URL：<input type="text" name="goods_url"/><br/>
+总金额：<input type="text" name="total_amount" required="required" />*必填<br/>
+后台通知地址(return_url): <input type="text" name="return_url"/><br/>
+付款码：<input type="text" name="pay_code" required="required" />*必填 请扫描或输入手机端百度钱包18位付码<br/>
+实体商户门店号: <input type="text" name="mno"  value='123456789012345'/><br/>
+实体商户门店名称: <input type="text" name="mname" value='mname' /><br/>
+实体商户终端号: <input type="text" name="tno"  value='123456789'/><br/>
+商户自定义数据：<input type="text" name="extra" /><br/>
+<input type="submit" value="提交"/><br/>
+</form>
+
+</body>
+</html>

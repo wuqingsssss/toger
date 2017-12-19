@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+body{position:static;display:block;}
+.hide{display:none;}
+/*全局样式*/
+
+/* 抢红包样式*/
+.hb{overflow: hidden;min-width: 300px;width:100%;height: 100%; background: url(../image/coupon2/bg.png) no-repeat 0px 0px /100% 100% ;background-size:cover; 
+ bottom: 0px;position: fixed;overflow-y: scroll;
+}
+.hb_top{width:100%;text-align: center;padding-top: 3em;}
+.hb_top img{width:60%;}
+
+.hb_body {background: transparent url("../image/coupon2/bg01.png") no-repeat scroll 50% 0px /  60% auto;
+width: 100%;
+padding-bottom:5em;
+text-align: center;
+overflow: hidden;
+position: relative;
+}
+.hb_body2 {background: transparent url("../image/coupon2/bg03.png") no-repeat scroll 50% 0px / 60% auto;
+width: 100%;padding-bottom:5em;
+text-align: center;
+overflow: hidden;
+}
+
+.hb_box{color:#fff;}
+.hb_box input{height: 2.0em;font-size: 1.5em;margin-top: 5%;width: 50%;font-family:微软雅黑,黑体;}
+
+.hb_box2{ 
+  background-color: #FFF;
+height: 5em;
+overflow: hidden;
+display: block;
+  margin: 0 30%;
+line-height: 1.6em;
+font-size: 1.1em;
+padding: 0.2em;
+color: #404040;
+border-radius: 5px;
+}
+#box1{margin-top: 30%;}
+.msg{width:100%;clear:both;float:left;}
+.hb_tt {top:10px;left:0;right:0px;position:absolute;}
+.hb_tt img{width:60%;}
+.hb_title img{width:60%;margin-top: 20%;}
+
+.hb_foot{width: 100%;text-align: center;margin-top: 1em;}
+.hb_foot .btn{background-color: #fff100;padding: 0.5em 2em;color:#804311;font-size: 1.5em;font-weight: bolder;border-radius: 5px;cursor: pointer;}
+.hb_foot .btn img{height: 20px;}
+
+.hb_info{width: 100%;color:#fff;background-color:rgba(0, 0, 0, 0.4);background: url(../image/coupon2/bg04.png) repeat;margin: 1em 20%;
+width: 60%;
+text-align: left;
+padding: 0.5em 2em;}
+
+.black{
+background:#000; opacity:0.8;filter: alpha(opacity=80); background-size:cover; width:100%; height:100%; position: fixed; top:0; left:0; z-index:5;
+}

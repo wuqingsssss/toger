@@ -1,0 +1,83 @@
+@charset "utf-8";
+/*========================= 时令专题模板 start =========================*/
+@media(min-width:360px) {
+    html {
+    font-size:100px
+  }
+}
+.Template-con{ background: #fff;}
+.Template-banner p img{ width: 100%;}
+.Template-list p img{ width: 100%;}
+.Vegetables-name{ padding: .1rem 0 0 0; }
+.Vegetables-name p{ line-height: .3rem;}
+.Vegetables-name p .origin{ width: .1rem; height: .1rem; border-radius: 50%; display: inline-block; margin: 0 .05rem; }
+.Vegetables-name p .co-01{  background: #cedc38; }
+.Vegetables-name p .co-02{  background: #fbdd60; }
+
+.Vegetables-name p.f-l{ font-size: .16rem; font-weight: bold;}
+.Vegetables-name p b.Price{ font-size: .17rem; width: .7rem; height: .3rem; color: #fff; text-align: center; line-height: .3rem; background: #682d59; display: block;}
+
+section .Vegetables-f:last-child{ border-bottom: 1px solid #e5e5e5; margin-bottom: .1rem;}
+.Vegetables-f{margin: 0 .1rem; }
+
+.Vegetables{
+  -webkit-box-shadow:0 0 6px 1px #b2b2b2;  
+  -moz-box-shadow:0 0 6px 1px #b2b2b2;  
+  box-shadow:0 0 6px 1px #b2b2b2;  
+  margin-bottom: .1rem;
+  padding-bottom: .1rem;
+  background: #f9f9f9;
+}
+.Template-list p{ padding-bottom: .1rem; }
+.Vegetables-box{ position:relative; height: 1.3rem; width: 100%;}
+.Vegetables-pic{ 
+	width: 100%; 
+	height: .9rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -.45rem;
+}
+.Vegetables-box .bg-01{
+  background:-moz-linear-gradient(60deg,#cedc38,#d3e140);
+  background:-webkit-linear-gradient( 60deg,#cedc38,#d3e140);
+  background:-o-linear-gradient(60deg,#cedc38,#d3e140);
+  background:-ms-linear-gradient(60deg,#cedc38,#d3e140);
+  background:linear-gradient(60deg,#cedc38,#d3e140);
+} 
+.Vegetables-box .bg-02{
+  background:-moz-linear-gradient(60deg,#f5ca00,#fde549);
+  background:-webkit-linear-gradient( 60deg,#f5ca00,#fde549);
+  background:-o-linear-gradient(60deg,#f5ca00,#fde549);
+  background:-ms-linear-gradient(60deg,#f5ca00,#fde549);
+  background:linear-gradient(60deg,#f5ca00,#fde549);
+}
+
+/*.Vegetables-box .bg-02{
+  background:-moz-linear-gradient(60deg,#000,#fff);
+  background:-webkit-linear-gradient( 60deg,#000,#fff);
+  background:-o-linear-gradient(60deg,#000,#fff);
+  background:-ms-linear-gradient(60deg,#000,#fff);
+  background:linear-gradient(60deg,#000,#fff);
+}*/
+
+.Vegetables-pic p{ font-size: .12rem; color: #494949; width: 42%; margin-right: .2rem;margin-top: .15rem; float: right;}
+.Vegetables-box .pic{ width: 1.3rem; height: 1.3rem; position: absolute; left:.15rem; top: 0; }
+.Vegetables-box .pic img{ width: 1.3rem; height: 1.3rem; }
+.Price-btn{
+	position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.Price-btn button{
+	background: #c9455b;
+    color: #fff;
+    border-radius: .03rem;
+    outline: none;
+    border: none;
+    width: 1rem;
+    height: .35rem;
+    line-height:.35rem;
+    font-size: 0.15rem;
+    font-weight: bold;
+}
+/*========================= 时令专题模板 end =========================*/

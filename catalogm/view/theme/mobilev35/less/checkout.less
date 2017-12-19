@@ -1,0 +1,337 @@
+/* checkout */
+.checkout-page .checkout {
+  padding: 20px 5px;
+  margin-bottom: 20px;
+}
+.order-title {
+  height: 30px;
+  line-height: 30px;
+  background: #ECE8E5;
+  padding-left: 20px;
+  font-weight: bold;
+  color: #807F7D;
+  font-size: 16px;
+}
+.order-status{margin-bottom: 10px;}
+/*
+.checkout-heading {
+	background: #F8F8F8;
+	border: 1px solid #DBDEE1;
+	padding: 8px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #555555;
+	margin-bottom: 15px;
+}*/
+
+.checkout-heading {
+    border-bottom: medium none;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 13px;
+}
+
+.checkout-page #shipping-address{ 
+	 border-top: 2px solid #c1ea9e;
+	 border-bottom: 1px solid #c1ea9e;
+	 background-color:#f1fbe9;
+	 padding:15px; 
+}
+
+.checkout-page #shipping-address .checkout-heading{ margin-top:0;  padding:0;  }
+
+.checkout-page #shipping-address .checkout-content{ padding:10px 0px 20px; }
+
+.checkout-heading a {
+	margin-top: 1px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #185D94;
+	margin-left:20px;
+	float:right;
+}
+.checkout-content {
+	padding: 0px 0px 15px 0px;
+	overflow:hidden; 
+}
+.checkout-content .left {
+	float: left;
+	width: 48%;
+}
+.checkout-content .right {
+	float: right;
+	width: 48%;
+}
+.checkout-content .buttons {
+	clear: both;
+}
+.checkout-product table {
+	width: 100%;
+	border-collapse: collapse;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+}
+.checkout-product td {
+	padding: 7px;
+}
+.checkout-product thead td {
+	color: #4D4D4D;
+	font-weight: bold;
+	background-color: #F7F7F7;
+	border-bottom: 1px solid #DDDDDD;
+}
+.checkout-product thead .name, .checkout-product thead .model {
+	text-align: left;
+}
+.checkout-product thead .promotion, .checkout-product tbody .promation{text-align: right;}
+.checkout-product thead .quantity, .checkout-product thead .price, .checkout-product thead .total {
+	text-align: right;
+}
+.checkout-product tbody td {
+	vertical-align: top;
+	border-bottom: 1px solid #DDDDDD;
+}
+.checkout-product tbody .name, .checkout-product tbody .model {
+	text-align: left;
+}
+.checkout-product tbody .name a{color: #00a79d;}
+.checkout-product tbody .quantity, .checkout-product tbody .price, .checkout-product tbody .total {
+	text-align: right;
+}
+.checkout-product tfoot td {
+	text-align: right;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+
+#payment-method .icon_alipay {
+    background: url("graphic/alipay.jpg") no-repeat scroll center center transparent;
+    display: inline-block;
+    height: 50px;
+    text-indent: -1000em;
+    width: 132px;
+}
+
+.checkout-page #shipping-method .checkout-content,
+.checkout-page #payment-method .checkout-content,
+.checkout-page #confirm .checkout-content{ border-bottom: 2px dotted #CCC; }
+.checkout-page #payment-button{ margin-top:15px;}
+
+#payment-button .checkout-content{ 
+	padding: 5px;
+}
+
+#payment-button .payment{
+  width:100%;
+}
+
+#payment-button .payment .buttons .right {
+	width: 100%;
+	text-align: center;
+}
+
+#payment-button #button-confirm {
+  overflow: hidden;
+  vertical-align: middle;
+  color: #FFFFFF !important;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height:50px;
+  border: none;
+  padding: 0px;
+
+  background: url("graphic_v2/Settlement_normal.png") no-repeat center center;
+  background-size: 100% 100%;
+
+  &:hover,&:active{
+	background-image: url("graphic_v2/Settlement_select.png");
+  }
+}
+
+
+.checkout-content .information{
+  text-align: left;
+  padding: 20px;
+  background-color: #CDEDEC;
+  border:none;
+
+  .pay-info{
+	height: 30px;
+	line-height: 30px;
+	vertical-align: top;
+  }
+
+  .ship-info{
+	line-height: 30px;
+	margin-top: 10px;
+  }
+}
+
+.checkout-total{float: right; clear: both; }
+.payment{float: right;}
+.sub_total{height: 30px; line-height: 30px;}
+
+div.total{border-top: 1px solid #ccc;height: 40px; line-height: 40px;margin-top: 10px; margin-bottom: 10px;float: right;display: block;clear: both; }
+.checkout-total .price{width: 130px; display: block; float: left; text-align: right; margin-right: 20px;  }
+.total .price{font-size: 14px;font-weight: bold;}
+.checkout-total .number{display: block;float: left; text-align: right; width: 100px;}
+.checkout-total .number {
+	color: #FF6600;
+	font-family: Verdana,Arial;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.checkout-total .total .number {
+	color: red;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: Arial;
+}
+.checkout .shipping,.checkout .sub_total,.checkout .coupon{display: block;clear: both; float: right;margin-top: 10px;}
+
+.bank-list{
+	overflow:hidden;
+	margin-top:5px;
+	list-style:none;
+}
+.bank-list li{
+	float:left;
+	width:150px;
+	margin-bottom:5px;
+}
+
+
+.icon-info{
+    background-color: #D2EEF7;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    font-weight: normal;
+    height: 30px;
+    line-height: 15px;
+    padding: 0 3px;
+    top: -1px;
+    font: 12px/1.5 tahoma,arial,"宋体";
+}
+.bank-icon{
+    background-image: url(../image/bankicon.png);
+    display:inline-block;
+    height: 30px;
+    width:120px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+}
+.ICBCB2C{
+    background-position: 0 -40px;
+}
+.CMB {
+    background-position: 0 -80px;
+}
+.CCB{
+    background-position: 0 -320px;
+}
+.BOCB2C{
+    background-position: 0 -520px;
+}
+.ABC{
+    background-position: 0 -480px;
+}
+.COMM{
+    background-position: 0 -600px;
+}
+.PSBC-DEBIT {
+    background-position: 0 -400px;
+}
+.CEBBANK {
+    background-position: 0 -440px;
+}
+.SPDB {
+    background-position: 0 -360px;
+}
+.GDB {
+    background-position: 0 -280px;
+}
+.CITIC {
+    background-position: 0 -200px;
+}
+.CIB {
+    background-position: 0 -3365px;
+}
+.SDB {
+    background-position: 0 -240px;
+}
+.CMBC {
+    background-position: 0 -120px;
+}
+.HZCBB2C {
+    background-position: 0 -760px;
+}
+.SHBANK {
+    background-position: 0 -840px;
+}
+.BJRCB {
+    background-position: 0 -2640px;
+}
+.SPABANK {
+    background-position: 0 -1880px;
+}
+.FDB {
+    background-position: 0 -1320px;
+}
+.NBBANK {
+    background-position: 0 -1240px;
+}
+.BJBANK {
+    background-position: 0 -3240px;
+}
+.WZCBB2C-DEBIT {
+    background-position: 0 -1720px;
+}
+.ICBCBTB{
+    background-image: url(../image/ENV_ICBC_OUT.gif);
+}
+.CCBBTB{
+    background-image: url(../image/ENV_CCB_OUT.gif);
+}
+.ABCBTB{
+    background-image: url(../image/ENV_ABC_OUT.gif);
+}
+.SPDBB2B{
+    background-image: url(../image/ENV_SPDB_OUT.gif);
+}
+/* checkout */
+.tishi{width: 550px; margin: 40px auto;}
+.tishi-title{
+	height: 53px;
+	line-height: 53px;
+	background: url("graphic/checkmark.png") left top no-repeat;
+	padding: 0px 0px 20px 60px;
+	font-family: "microsoft yahei";
+	font-size: 20px;
+	font-weight: bold;
+}
+.tishi-content{margin-left: 50px; font-size: 14px;}
+.tishi-content p{
+	margin-bottom: 10px;
+}
+.tishi-content a{color: #00a79d;}
+
+.order_status{ height:45px; width:710px; margin:25px auto; }
+.order_status .status{ height:18px;  position:relative;  background:url(graphic/state.jpg) center 0 no-repeat; }
+.order_status .status-16{ background-position:center 0 ; }
+.order_status .status-2{ background-position:center -18px; }
+.order_status .status-3{ background-position:center -36px; }
+.order_status .status-5{ background-position:center -70px; }
+
+.order_status ul{ height:20px; position:absolute; top:20px; left:0;   line-height:20px; }
+.order_status ul li{ float:left; margin-right:118px; }
+.order_status ul li.i1{  }
+.order_status ul li.i2{ }
+.order_status ul li.i3{ }
+.order_status ul li.i4{ margin-right:110px;  }
+.order_status ul li.i5{ margin-right:0px;  }

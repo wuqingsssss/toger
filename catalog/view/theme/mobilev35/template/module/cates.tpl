@@ -1,0 +1,1 @@
+<?php include dirname(dirname(__FILE__)).'/product/ilex_product_list.php'; ?>

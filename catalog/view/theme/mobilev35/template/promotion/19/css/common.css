@@ -1,0 +1,188 @@
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, span, a, table, tr, td, th, thead, tbody, input, button, form {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    font-weight: normal;
+    font-family: "黑体", serif;
+    border: none;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+
+a, a:link, a:active, a:hover, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+table, tr, td, th, thead, tbody {
+    border-collapse: collapse;
+}
+
+input, textarea, input:focus, textarea:focus {
+    border: none;
+    outline: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+.clearfix {
+    display: block;
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.vc-wrapper {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.text-overflow {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.with-before:before {
+    display: inline-block;
+    vertical-align: top;
+    content: "";
+    margin-right: 4px;
+    width: 4px;
+    min-width: 4px;
+    height: 100%;
+    min-height: 100%;
+}
+
+.text-del {
+    text-decoration: line-through;
+}
+
+.col-gray {
+    color: #9B9B9B;
+}
+
+.col-58 {
+    color: #585858;
+}
+
+.col-db {
+    color: #DB2403;
+}
+
+.round {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.fix-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    height: 2.5em;
+    font-size: 18px;
+    line-height: 2.4em;
+    text-align: center;
+    background-color: #FFF;
+    border-bottom: 1px solid #BCBCBC;
+    width: 100%;
+    position: relative;
+}
+
+.header a .btn-return {
+    display: inline-block;
+    position: absolute;
+    left: 18px;
+    top: 1.25em;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #00A499;
+    border-left: 2px solid #00A499;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    z-index: 10;
+}
+
+.spinner-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, .1);
+    position: fixed;
+}
+
+.spinner-wrapper > .spinner {
+    width: 60px;
+    height: 60px;
+    margin: -30px auto;
+    position: relative;
+    top: 50%;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #30FF00;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}

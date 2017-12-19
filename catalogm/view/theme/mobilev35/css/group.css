@@ -1,0 +1,121 @@
+.button_pt {
+    background: #b5c52f;
+    color: #FFFFFF;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    float: left;
+    line-height: 0.8rem;
+    margin: 0.1rem 0.1rem;
+    width: 95%;
+    font-size: 0.28rem;
+}
+
+body>.module>.title_pt {
+    padding: 0.1rem 0.1rem;
+    /*line-height: 1em;*/
+    width: auto;
+}
+body>.module>.text_pt {
+    padding: 0.1rem 2.5%;
+    line-height: 18px;
+    width: auto;
+}
+.photo {
+    float:left;
+    border-radius:50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #ededed;
+    opacity: 0.9;
+    margin:0.05rem;
+    /*团长小标新增*/
+    position: relative;
+    overflow: hidden;
+    /*团长小标新增*/
+}
+/*团长小标新增*/
+.photo i{
+    font-size: 0.1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: white;
+	width: 99%;
+	text-align: center;
+	background-color: #d51c3e;
+	border-top-left-radius: 30%;
+	border-top-right-radius: 30%;
+	line-height: 0.15rem;
+}
+/*团长小标新增*/
+.photo img{width:0.5rem;}
+
+#m-add-cart > .add-cart > .pull-left > span.x {
+    display: inline-block;    
+vertical-align:inherit;
+    margin-top: 0.03rem;
+    line-height: 0.25rem;
+    padding: 0 0.06rem;
+}
+#m-intro{background-color: #f8f3f0;}
+#m-intro>.fi-content {
+    padding: 0;
+}
+.join.joinbtn {
+    line-height: 45px;
+    padding: 0 0.6rem;
+    border-radius: 0;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #b5c52f;
+}
+
+#button-checkout {
+	margin: 0px 0px;
+	width:  1.3rem;
+}
+
+#m-add-cart {
+  height: 0.44rem;
+}
+#m-add-cart > .add-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ededed;
+  height: 0.44rem;
+}
+
+
+@charset "utf-8";
+/*========================= 团购页面 start =========================*/
+.buy-Group{padding: 0 .1rem; background: #fff;}
+.buy-Group ul li {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: .1rem 0;
+  overflow: hidden;
+}
+.buy-Group ul li .img{width:1.5rem;height:1.5rem; float: left;}
+.buy-Group ul li .img img{width: 100%; height: 100%;}
+.buy-Group ul li .content{float: right; text-align: right; width: 46%;}
+.buy-Group ul li .content .p-01{font-size: 0.15rem; color: #333; font-weight: bold;}
+.buy-Group ul li .content .p-02{font-size: 0.13rem; color: #7f7f7f; font-weight: 600;}
+.buy-Group ul li .content .p-03{font-size: 0.11rem; color: #9d9d9d;}
+.buy-Group ul li .content .p-01,.p-02,.p-03{ margin-bottom: .1rem;}
+.buy-Group ul li .content .Price{ font-size: .11rem; margin-bottom: .1rem;}
+.buy-Group ul li .content .Price .box-01{ width: .3rem; height: .2rem; line-height: .2rem; color: #333; font-size: .11rem; background: #cedc37; display: inline-block; text-align: center; border-radius: .03rem;}
+.buy-Group ul li .content .Price .box-02{ width: .35rem; height: .2rem; line-height: .2rem; color: #fff;  background: #682d59; display: inline-block; text-align: center; border-radius: .03rem;}
+.buy-Group ul li .content .Price .box-03{font-size: .11rem; }
+.buy-Group ul li .content .Price .box-03 b{ font-size: .13rem; font-weight: bold; color: #c9455b;}
+.Group-btn span{ width: .55rem; height: .25rem; background: #333; line-height: .25rem; text-align: left; padding-left: .05rem; font-size: .13rem; color: #fff; display: inline-block;}
+.Group-btn b{ width: 0;height: 0;border-top: .3rem solid #c9455b;border-left: .13rem solid transparent; position: absolute; left: -.13rem;top: 0;}
+.Group-btn a{width: .75rem; height: .3rem; font-size: .15rem; color: #fff; background: #c9455b; text-align: center; line-height: .3rem; display: inline-block; position:relative;left: -.03rem;}
+@media(min-width:360px) {
+	.Group-btn b{
+		left: -.126rem;
+	}
+   
+}

@@ -1,0 +1,112 @@
+
+#siderIMchat_main1 .top {
+    background: url("../image/siderim_title.gif") repeat scroll 0 0 transparent;
+    height: 34px;
+}
+
+#siderIMchat_main1 .infobox {
+    background: url("../image/siderim_infobox.gif") no-repeat scroll 0 0 #BDC5CB;
+    color: #000000;
+    font-weight: 700;
+    line-height: 14px;
+    padding: 5px;
+    text-align: center;
+}
+#siderIMchat {
+    position: absolute;
+    z-index: 65535;
+}
+#siderIMchat_hiddenbar {
+    background: url("../image/siderim_hiddenbar.gif") repeat scroll 0 0 transparent;
+    height: 136px;
+    width: 26px;
+}
+#siderIMchat_main {
+    display: none;
+    margin: 0 10px;
+    width: 110px;
+}
+#siderIMchat_main .top {
+    background: url("../image/siderIM_title.gif") repeat scroll 0 0 transparent;
+    height: 34px;
+}
+#siderIMchat_main .infobox {
+    background: url("../image/siderim_infobox.gif") no-repeat scroll 0 0 #BDC5CB;
+    color: #000000;
+    font-weight: 700;
+    line-height: 14px;
+    padding: 5px;
+    text-align: center;
+}
+#siderIMchat_main .bg {
+    background: url("../image/siderim_bg.gif") repeat scroll 0 0 transparent;
+    padding: 5px;
+}
+#siderIMchat_main ul li {
+    border-bottom: 1px dotted #DDDDDD;
+    margin-bottom: 6px;
+    margin-right: 5px;
+}
+#siderIMchat_main .bottom {
+    background: url("../image/siderim_bottom.gif") repeat scroll 0 0 transparent;
+    height: 9px;
+    overflow: hidden;
+}
+#siderIMchat1 {
+    position: absolute;
+    z-index: 65535;
+}
+#siderIMchat_hiddenbar1 {
+    background: url("../image/siderim_hiddenbar.gif") repeat scroll 0 0 transparent;
+    height: 136px;
+    width: 26px;
+}
+#siderIMchat_main1 {
+    display: none;
+    margin: 0 10px;
+    width: 110px;
+}
+#siderIMchat_main1 .top {
+    background: url("../image/siderim_title.gif") repeat scroll 0 0 transparent;
+    height: 34px;
+}
+#siderIMchat_main1 .infobox {
+    background: url("../image/siderim_infobox.gif") no-repeat scroll 0 0 #BDC5CB;
+    color: #000000;
+    font-weight: 700;
+    line-height: 14px;
+    padding: 5px;
+    text-align: center;
+}
+#siderIMchat_main1 .bg {
+    background: url("../image/siderim_bg.gif") repeat scroll 0 0 transparent;
+    padding: 5px;
+}
+#siderIMchat_main1 ul li {
+    float: left;
+    margin-bottom: 6px;
+    margin-right: 5px;
+    padding: 0 5px 0 10px;
+}
+#siderIMchat_main1 .bottom {
+    background: url("../image/siderim_bottom.gif") repeat scroll 0 0 transparent;
+    height: 9px;
+    overflow: hidden;
+}
+
+.textcenter, td.textcenter, a.textcenter, span.textcenter, li.textcenter, div.textcenter, p.textcenter, colgroup.textcenter {
+    text-align: center;
+}
+
+.pushdown-2 {
+    margin-top: 10px;
+}
+
+.textcenter, td.textcenter, a.textcenter, span.textcenter, li.textcenter, div.textcenter, p.textcenter, colgroup.textcenter {
+    text-align: center;
+}
+#siderIMchat_hiddenbar1 {
+    background: url("../image/siderim_hiddenbar.gif") repeat scroll 0 0 transparent;
+    height: 136px;
+    width: 26px;
+}

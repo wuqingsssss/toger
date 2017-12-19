@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+/*找回密码开始*/
+.lt{ float:left; }
+.rt{ float:right; }
+
+.password_contant{ margin-top:10px;}
+.pass_title h1{ height:48px; background:url(graphic/forgotten/lo_btbg.gif) repeat-x; line-height:48px; font-weight:normal; font-size:22px; padding-left:15px;}
+.password_contant{ border:1px solid #ccc;}
+.pass_left{ padding:25px 56px 0 55px; width:630px; border-right:1px solid #ccc; height:400px; }
+.pass_right{padding:25px 23px 0 23px; width:300px;height:400px;}
+
+.pass_progress {
+  background: url("graphic/forgotten/pass01.gif") no-repeat scroll 0 0 transparent;
+  height:30px;
+  overflow: hidden;
+  padding-top: 30px; width:630px;
+}
+.pass_progress2 {
+  background: url("graphic/forgotten/pass02.gif") no-repeat scroll 0 0 transparent;
+  height:30px;
+  overflow: hidden;
+  padding-top: 30px; width:630px;
+}
+.pass_progress3 {
+  background: url("graphic/forgotten/pass03.gif") no-repeat scroll 0 0 transparent;
+  height:30px;
+  overflow: hidden;
+  padding-top: 30px; width:630px;
+}
+.pass_progress li,.pass_progress2 li,.pass_progress3 li {
+  float: left;
+  height:30px;
+  line-height:30px;
+  text-align: center;
+  width: 210px; font-size:14px;
+}
+.pass_inputlist tr td{ padding-bottom:20px;}
+.pass_tj{ text-align:right; font-size:14px;}
+.pass_tsyy{ margin-top:20px; font-size:14px; line-height:26px; margin-bottom:20px;}
+.pass_input{ height:26px; width:250px; line-height:26px;}
+.pass_input2{ height:26px; width:80px; line-height:26px;}
+.yzm{display:inline-block; vertical-align:middle}
+.pass_next{ padding:4px 12px; background-color:#90B830; cursor:pointer; border:0; font-size:16px; color:#fff;}
+
+.pass_right p{ line-height:2em; }
+.pass_right p strong{ }
+
+#content .content{ padding:0; }
+
+.inline{ display:inline; margin-left:2em; }
+
+/*找回密码结束*/

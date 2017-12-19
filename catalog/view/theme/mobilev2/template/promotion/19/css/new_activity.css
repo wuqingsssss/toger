@@ -1,0 +1,106 @@
+body {
+ margin: 0 auto;
+ font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, arial;
+ background-color: #E5E5E5;
+}
+.wrapper{margin-bottom: 55px;}
+#banner {
+ padding: 8px 0;
+ background-color: #E5E5E5;
+}
+#banner ul li {
+ width: 100%;
+ font-size: 0;
+}
+#banner ul li img {
+ width: 100%;
+ height: auto;
+}
+h2 {
+ line-height: 2.5em;
+ font-weight: bold;
+ color: #362E2B;
+ font-size: 16px;
+}
+#rule {
+ padding: 0 8px 16px;
+ background-color: white;
+}
+#rule div {
+ position: relative;
+}
+#rule #rule-btn #btn-buy {
+ width: 100%;
+}
+#rule #rule-btn #btn-buy a {
+ line-height: 23px;
+ padding: 4px 0;
+ display: block;
+ text-align: center;
+ border-radius: 4px;
+ border: 1px solid #B92B0B;
+ color: #F7F3F3;
+ font-size: 14px;
+ background: linear-gradient(left, #af1118, #e95309);
+ background: -moz-linear-gradient(left, #af1118, #e95309);
+ background: -webkit-linear-gradient(left, #af1118, #e95309);
+ background: -webkit-gradient(linear, left top, right top, from(#af1118), to(#e95309));
+ background: -o-linear-gradient(left, #af1118, #e95309);
+}
+#rule #rule-btn #btn-buy a i {
+ display: inline-block;
+ vertical-align: middle;
+ background: url("../img/new_activity/icon-buy.png") no-repeat;
+ background-size: 100% 100%;
+ width: 22px;
+ height: 23px;
+ margin-right: 4px;
+ margin-bottom: 3px;
+}
+#food-list {
+ margin-top: 8px;
+ background-color: #FFF;
+ padding: 0 8px;
+}
+#food-list ul {
+ margin-left: -4.3%;
+ font-size: 0;
+}
+#food-list ul li {
+ display: inline-block;
+ width: 29%;
+ padding-top: 29%;
+ margin: 0 0 8px 4.3%;
+ position: relative;
+ height: 0;
+}
+#food-list ul li a {
+ position: absolute;
+ top: 0;
+ right: 0;
+ width: 100%;
+ height: 100%;
+ background-size: 100% auto;
+}
+#food-list ul li a div {
+ position: absolute;
+ font-size: 12px;
+ color: white;
+ bottom: 0;
+ width: 100%;
+ height: 60%;
+ line-height: 1.2em;
+ background: linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+ background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+ background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+ background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+ background: -o-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
+}
+#food-list ul li a div span {
+ position: absolute;
+ left: 4px;
+ bottom: 0;
+}
+#food-list ul li a div span:first-child {
+ bottom: 1.2em;
+}

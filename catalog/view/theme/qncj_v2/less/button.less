@@ -1,0 +1,255 @@
+/* button */
+a.button {
+    display: inline-block;
+    padding-left: 0px;
+    background:#00a79d; 
+    text-decoration: none;
+    cursor: pointer;
+    border:1px solid #00a79d;
+    padding: 0px 10px;
+}
+a.button span {
+    color: #FFFFFF;
+    line-height: 27px;
+    
+    font-weight: bold;
+    display: block;
+    padding:0;
+}
+
+a.button:hover span {
+    color: #000;
+}
+
+.buttons{display: block;overflow: auto;}
+.buttons .left {
+    float: left;
+    text-align: left;
+}
+.buttons .right {
+    float: right;
+    text-align: right;
+}
+.buttons .center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttons a.button span{line-height: 35px;}
+a.highlight span{line-height: 35px;}
+
+
+
+#button-cart.highlight {
+    background: url("graphic/tocart.png") no-repeat scroll 0 0 transparent;
+}
+#button-cart.highlight:hover {
+    background-position: 0px -37px;
+}
+.highlight {
+    background: none repeat scroll 0 0 #409DC9;
+    border: medium none;
+    color: #FFFFFF !important;
+    display: inline-block;
+    font: bold 16px/36px Microsoft YaHei,arial;
+    height: 35px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 130px;
+}
+#button-cart.button{padding: 0px 20px;}
+
+#button-cart.button span{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn{
+    -moz-border-color:none;
+    background-color: #F5F5F5;
+    background-repeat: repeat-x;
+    border-color: #CCCCCC #CCCCCC #B3B3B3;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 8px;
+    text-align: center;
+    
+    vertical-align: middle;
+}
+.btn:hover{color: #6bb130;text-decoration: none; background: #fff;}
+
+.cart .btn{padding: 4px 20px; background-color:#00a79d; color: #fff; border: 1px solid #00a79d;}
+.cart .btn:hover{color: #00a79d;text-decoration: none; background: #fff;}
+
+.wishlist .btn{padding: 4px 15px; }
+
+.wishlist .btn:hover{color: #6bb130;text-decoration: none; background: #fff;}
+
+* + html .button {
+    min-width: 70px;
+}
+button.button, input.button[type="submit"] {
+    height: 29px;
+    line-height: 29px;
+    margin: 0;
+    vertical-align: bottom;
+    cursor:pointer; 
+}
+* + html button.button, * + html input.button[type="submit"] {
+    overflow: visible;
+}
+.button:hover {
+   -moz-transition: all 0s ease 0s;
+    background-color: #F8F8F8;
+    background-image: -moz-linear-gradient(center top , #F8F8F8, #F1F1F1);
+    border: 1px solid #C6C6C6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    text-decoration: none;
+}
+.button:active {
+    background-color: #F6F6F6;
+    background-image: -moz-linear-gradient(center top , #F6F6F6, #F1F1F1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.button:visited {
+    color: #666666;
+}
+.button-submit {
+    background-color: #4D90FE;
+    background-image: -moz-linear-gradient(center top , #4D90FE, #4787ED);
+    border: 1px solid #3079ED;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+.button-submit:hover {
+
+    background-image: -moz-linear-gradient(center top , #4D90FE, #357AE8);
+    border: 1px solid #2F5BB7;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+.button-submit:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.button-share {
+    background-color: #3D9400;
+    background-image: -moz-linear-gradient(center top , #3D9400, #398A00);
+    border: 1px solid #29691D;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+.button-share:hover {
+    background-color: #368200;
+    background-image: -moz-linear-gradient(center top , #3D9400, #368200);
+    border: 1px solid #2D6200;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+.button-share:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.button-red {
+    background-color: #D14836;
+    background-image: -moz-linear-gradient(center top , #DD4B39, #D14836);
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+.button-red:hover {
+    background-color: #C53727;
+    background-image: -moz-linear-gradient(center top , #DD4B39, #C53727);
+    border: 1px solid #B0281A;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+.button-red:active {
+    background-color: #B0281A;
+    background-image: -moz-linear-gradient(center top , #DD4B39, #B0281A);
+    border: 1px solid #992A1B;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.button-white {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DCDCDC;
+    color: #666666;
+}
+.button-white:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #333333;
+}
+.button-white:active {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+.button-red:visited, .button-share:visited, .button-submit:visited {
+    color: #FFFFFF;
+}
+.button-submit:focus, .button-share:focus, .button-red:focus {
+    box-shadow: 0 0 0 1px #FFFFFF inset;
+}
+.button-share:focus {
+    border-color: #29691D;
+}
+.button-red:focus {
+    border-color: #D14836;
+}
+.button-submit:focus:hover, .button-share:focus:hover, .button-red:focus:hover {
+    box-shadow: 0 0 0 1px #FFFFFF inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.button img {
+    display: inline-block;
+    margin: -3px 0 0;
+    opacity: 0.55;
+    vertical-align: middle;
+}
+* + html .button img {
+    margin: 4px 0 0;
+}
+.button:hover img {
+    opacity: 0.72;
+}
+.button:active img {
+    opacity: 1;
+}
+
+/* vote product button */
+.btn_heart{  
+    height: 55px;
+    width: 60px;
+    color: #333;
+    background: url(graphic/heart.png) no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn_heart:hover{
+    background: url(graphic/heart-on.png) no-repeat;
+    color: #fff;
+}
+
+.selected .btn_heart{
+    background: url(graphic/heart-on.png) no-repeat;
+    color: #fff;
+}

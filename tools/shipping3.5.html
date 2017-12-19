@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>青年菜君地址判定工具</title>
+    <style>
+body, html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+table {
+	padding-top: 0 0 0 0;
+	width: 100%;
+	height: auto;
+	border-spacing: 0;
+}
+
+#l-all {
+	width: 100%;
+	height: 99%;
+	margin: 4px 4px 4px 4px;
+}
+
+#l-query {
+	width: 20%;
+	height: 100%;
+	float: left;
+	font-size: 12px;
+	overflow-y: auto;
+}
+
+.text ul {
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	text-align: left;
+}
+
+.text input[type="text"] {
+	width: 100%;
+	border: 1px #00a99c solid;
+	height: 30px;
+	line-height: 30px;
+}
+
+.text li {
+	list-style: none;
+	position: relative;
+	margin: 10px;
+}
+
+.text .btn {
+	cursor: pointer;
+	text-align: center;
+	background-color: #00a99c;
+	color: #fff;
+	width: 80px;
+	height: 20px;
+	border-radius: 3px;
+	padding: 5px;
+	position: absolute;
+	right: 1px;
+	top: 0;
+}
+
+.text li a {
+	color: #666;
+	font-size: 13px;
+}
+
+.text .title2 {
+	background-color: #efefef;
+	color: #00a99c;
+	padding: 0;
+	margin: 0
+}
+
+#l-map {
+	width: 78%;
+	height: 100%;
+	float: left;
+	margin-left: 4px;
+}
+
+.overflow {
+	height: 150px;
+}
+</style>
+<body>
+<div id="l-all">
+    <div id="l-query" class="text">
+      <ul>
+      <li class="title">青年菜君可配送区域快速地址检测工具
+     </li>
+      <li>
+      <input type="text" id="shipping_address" name="shipping_address" value=""  class="requiredshipping" />
+      <div id="searchResultPanel"></div>
+      </li>
+      <li>
+      <span id="msg_shipping_address" class="error"><?php echo $error_shipping_address; ?></span>
+     </li>
+     
+     </ul>
+      <ul style="margin-top:30px;border: 1px #e5e5e5 solid;border-radius: 3px;">
+     <li class="title2">
+          青年菜君已开通区域
+     </li>
+     <li id="allowarea">
+     </li>
+     </ul>
+      <ul style="margin-top:30px;border: 1px #e5e5e5 solid;border-radius: 3px;">
+     <li class="title2">
+         围栏数据下载
+     </li>
+     <li>
+     <a href="/apiv3/index.php?route=lbs/shipping/getAllowarea&p=jd" target="_blank" >京东</a>
+     <a href="/apiv3/index.php?route=lbs/shipping/getAllowarea&p=meituan" target="_blank">美团</a>
+      <a href="/apiv3/index.php?route=lbs/shipping/getAllowarea" target="_blank">美食送格式</a>
+     <a href="/apiv3/index.php?route=lbs/shipping/getAllowarea&p=txt" target="_blank">文本</a>
+     </li>
+    <li class="title2">
+       相关工具
+     </li>
+     <li>
+     <a href="http://www.qingniancaijun.com.cn/apiv3/index.php?route=lbs/meishi/getMsAllowarea" target="_blank">美食送支持全部区域</a>
+     <a href="http://crm.meishisong.cn/tools/mapbd/index" target="_blank">美食送地址判定工具</a>
+     <a href="javascript:showDis();" target="_blank">地图测距</a>
+     </li>
+     
+</ul>
+    </div>
+    <div id="l-map" style="overflow: hidden; position: relative; z-index: 0; color: rgb(0, 0, 0); text-align: left; background-color: rgb(243, 241, 236);">
+   </div>
+</div>
+<script type="text/javascript" src="/assets/js/jquery/jquery-1.7.2.min.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=pUQv6G1P9uhBINarLQoOliVz" type="text/javascript"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/DistanceTool/1.2/src/DistanceTool_min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>var Util={ config:{
+     'ak'         : '' 
+}};
+Util.config.ak='pUQv6G1P9uhBINarLQoOliVz';
+</script>
+<script>
+//百度地图API功能
+/* 百度地图支持开始*/
+ 
+ var map,ac,shippingdata={},myDis;
+
+ 
+ $(document).ready(function(){
+	     initmap("l-map","北京",12);
+	     inininput("shipping_address");
+		 runderAllowarea("allowarea");
+	});   
+ 
+ function showDis(){
+	 myDis.open();  //开启鼠标测距
+ }
+ 
+ function  initmap(id,center,zoom){
+ 
+   map = new BMap.Map(id);
+   map.centerAndZoom(center,zoom);                   // 初始化地图,设置城市和地图级别。
+   // 启用滚轮放大缩小 
+   map.enableScrollWheelZoom();    // 启用滚轮放大缩小
+   map.addControl(new BMap.OverviewMapControl());          // 添加缩略地图控件
+   map.addControl(new BMap.NavigationControl());       // 添加比例尺控件
+   
+
+   myDis = new BMapLib.DistanceTool(map);
+   map.addEventListener("rightclick",function(e){
+		   disopen=myDis.open(); 
+   });
+
+   
+   map.addEventListener("click",function(e){
+    	
+    	//console.log(map.getZoom());
+    	$('#searchResultPanel').html(e.point.lng + " " + e.point.lat);
+	    map.clearOverlays();    //清除地图上所有覆盖物
+	    var marker=new BMap.Marker(e.point);
+	   
+		   var  pi={};
+		    pi.location=marker.point;  
+	       marker.enableDragging();
+	       marker.addEventListener('dragend', function(){
+	    	   var _m=this;
+	    	   map.clearOverlays();    //清除地图上所有覆盖物
+	    	   map.addOverlay(_m);    //添加标注
+	    	  var  pi={};
+			    pi.location=marker.point;
+			    
+			    $('#searchResultPanel').html(pi.location.lng + " " + pi.location.lat);
+		        getPoint(pi,checkpoi);
+	      });
+	           map.addOverlay(marker);    //添加标注
+	           getPoint(pi,checkpoi);
+  });
+
+ }
+    
+ 
+ function inininput(id,times){
+	 
+	 var timer;
+	 
+	 times=times||3000;
+    ac = new BMap.Autocomplete(    //建立一个自动完成的对象
+	{"input" : "shipping_address"
+	,"location" : map
+	,'onSearchComplete':function(e){
+		clearShippingData();
+		clearTimeout(timer);
+		
+    	if(e.getNumPois()==0){
+    		timer=setTimeout(function(){
+    			var keyword=$("#shipping_address").val();
+    			var patt1=/^\d*.\d*[,|\s]\d*.\d*$/;
+    		if(patt1.test(keyword)){
+    			keyword=keyword.replace(' ',',')
+    			var poiar=keyword.split(',');
+    			//console.log('poiar',poiar);
+    			 var point=new BMap.Point(poiar[0],poiar[1]);
+    	   		 map.clearOverlays();    //清除地图上所有覆盖物
+    	 	     var marker=new BMap.Marker(point);
+    	 		   var  pi={};
+    	 		    pi.location=marker.point;  
+    	 	       marker.enableDragging();
+    	 	       marker.addEventListener('dragend', function(){
+    	 	    	  var _m=this;
+    		    	   map.clearOverlays();    //清除地图上所有覆盖物
+    		    	   map.addOverlay(_m);    //添加标注
+    	 	    	  var  pi={};
+    	 			    pi.location=marker.point;
+    	 		   getPoint(pi,checkpoi);
+    	 	       });
+    	 	   map.addOverlay(marker);    //添加标注
+   	           getPoint(pi,checkpoi);
+
+    		}
+    		else
+    			{
+    			
+    	    getPointByAddress(e.keyword,checkpoi);
+    			}
+    		
+    		}, times/3);
+    		
+    		
+    		
+    	}
+    	else
+    	{timer=setTimeout(function(){
+    			var _value=e.getPoi(0);
+    			var myValue = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+            	setPlace(myValue);
+    	}, times);
+    	}
+    	
+    }
+    });
+
+$("#"+id).bind('copy cut paste',function(){
+	clearShippingData();
+	ac.search($("#"+id).val());
+});
+
+ac.addEventListener("onconfirm", function(e) {    //鼠标点击下拉列表后的事件
+	clearTimeout(timer);
+var _value = e.item.value;
+var myValue = _value.province +  _value.city +  _value.district +  _value.street +  _value.business;
+	setPlace(myValue);
+});	
+ }
+/* 百度地图支持结束*/ 
+function setPlace(myValue){
+	map.clearOverlays();    //清除地图上所有覆盖物
+	function myFun(){
+		var poi = local.getResults().getPoi(0);    //获取第一个智能搜索的结果
+		
+		//console.log('myfun poi',poi);
+		poi.location=poi.point;
+
+		map.centerAndZoom(poi.point,map.getZoom());//,14
+		
+		var marker=new BMap.Marker(poi.point);
+		   
+		   marker.enableDragging();
+		   
+		   marker.addEventListener('dragend', function(){
+			   var _m=this;
+	    	   map.clearOverlays();    //清除地图上所有覆盖物
+	    	   map.addOverlay(_m);    //添加标注
+			   var  pi={};
+			    pi.location=marker.point;
+			    getPoint(pi,checkpoi);
+		   });
+		  map.addOverlay(marker);    //添加标注
+		  checkpoi(poi.address,poi);
+		
+	}
+	var local = new BMap.LocalSearch(map, { //智能搜索
+	  onSearchComplete: myFun,
+	  onResultsHtmlSet:clearShippingData
+	});
+	local.search(myValue);
+}
+
+function clearShippingData(){
+	 $('#shipping_city').val('');
+	 $('#shipping_code').val('');
+	 $('#shipping_data').val('');
+	 $('#shipping_poi').val('');
+	 $('#address_poi').val('');
+	 $("#msg_shipping_address").html('');
+	 map.clearOverlays();    //清除地图上所有覆盖物
+}
+function getPoint(poi,callback)
+{   
+	  //callback($(keyword).val());
+
+	  var url = "http://api.map.baidu.com/geocoder/v2/?callback=?";
+	     // url = "http://api.map.baidu.com/place/v2/suggestion?callback=?";
+     $.getJSON(url, {
+         'location'          :''+poi.location.lat+','+poi.location.lng+'', //检索关键字
+         'output'     :'json',
+         'region'     : '131',  //北京的城市id
+         'pois'      : '0',  //显示详细信息
+         'ak'         : Util.config.ak  //用户ak
+     },function(e) {
+   	if(e.status==0){
+   	     poi=e.result;
+   		 //console.log('getPoint',poi);
+   		 var point=new BMap.Point(poi.location.lng,poi.location.lat);
+   	     map.centerAndZoom(point,map.getZoom());//,14
+   	   //if(!$('#'+ac.nc.input).val())
+          ac.setInputValue(poi.formatted_address);//是否开始拖拽地址跟随
+         if(callback)callback(poi.formatted_address,poi);
+        }
+     });
+     
+
+}
+function getPointByAddress(address,callback)
+{   
+	  	//console.log(address);
+	  var url = "http://api.map.baidu.com/geocoder/v2/?callback=?";
+	     // url = "http://api.map.baidu.com/place/v2/suggestion?callback=?";
+      $.getJSON(url, {
+          'address'          :address, //检索关键字
+          'output'     :'json',
+          'region'     : '131',  //北京的城市id
+          'ak'         : Util.config.ak  //用户ak
+      },function(e) {
+    	  //console.log(e);
+   	if(e.status==0){
+   	     poi=e.result;
+
+   		 var point=new BMap.Point(poi.location.lng,poi.location.lat);
+
+   		 map.clearOverlays();    //清除地图上所有覆盖物
+ 	    var marker=new BMap.Marker(point);
+ 		   var  pi={};
+ 		    pi.location=marker.point;  
+ 	       marker.enableDragging();
+ 	       marker.addEventListener('dragend', function(){
+ 	    	  var _m=this;
+	    	   map.clearOverlays();    //清除地图上所有覆盖物
+	    	   map.addOverlay(_m);    //添加标注
+ 	    	  var  pi={};
+ 			    pi.location=marker.point;
+ 		   getPoint(pi,checkpoi);
+ 	      });
+ 	     map.addOverlay(marker);    //添加标注
+   		 
+   		 
+   	      map.centerAndZoom(point,map.getZoom());//,14
+   	       //if(!$('#'+ac.nc.input).val())
+          ac.setInputValue(address);//是否开始拖拽地址跟随
+         if(callback)callback(address,poi);
+     
+        }
+   	else
+   		{
+   		     clearShippingData();
+		    $("#msg_shipping_address").html('地址不准确请重新输入');
+	        $("#msg_shipping_address").css('color','red');
+   		}
+     });
+     
+
+}
+
+
+function disposePoints(points)
+{
+	var pointsObjects = new Array();
+	var temppoints = new Array();
+
+	var pointsArray = points.split(",");
+	for (var i=0;i<pointsArray.length;i++)
+	{
+		coordinate = pointsArray[i].split(' ');
+		tbp = new BMap.Point(coordinate[0],coordinate[1]);
+		pointsObjects.push(tbp);
+		temppoints.push([tbp.lng, tbp.lat]);
+	}
+	
+	return {'obj':pointsObjects,'array':temppoints};
+}
+
+
+function runderAllowarea(id){
+	var url='/apiv3/index.php?route=lbs/shipping/getAllowarea&callback=?';
+	 $.getJSON(url,{},
+			 function(e) {
+		     //console.log(e);
+		 if(e)
+			 { 
+			 var colors=[];
+			 colors.push('#ff0000');
+			 colors.push('#ff6600');
+			 colors.push('#00A99C');
+			 colors.push('#ff00ff'); 
+			 colors.push('#ff3300');
+			 colors.push('#ffff00');
+			 colors.push('#99ff00');
+			 colors.push('#00ffff');
+			 colors.push('#6600ff');
+/*
+红色： 255,0,0——web颜色值：#ff0000
+橙色：255,102,0——web颜色值：#ff6600
+黄色：255,255,0——web颜色值：#ffff00
+黄绿：153,255,0——web颜色值：#99ff00
+绿色：0,255,0——web颜色值：#00ff00
+蓝绿：0,255,255——web颜色值：#00ffff
+蓝色：0,0,255——web颜色值：#0000ff
+蓝紫：102,0,255——web颜色值：#6600ff
+紫色：255,0,255——web颜色值：#ff00ff
+*/
+			 var tpl='',ishipping=0;
+			 for(shipping in e)
+			 {shippingdata[shipping]={};
+				// var colors=encodeURI(shipping).split("%");
+				// color='#'+colors[colors.length-1]+'ffff';
+				 if(ishipping>=colors.length)ishipping=0;
+				 color=colors[ishipping];
+				 //console.log(ishipping,shipping,colors,color);
+				 ishipping++;
+
+				 tpl+='<input type="checkbox" name="shippingmap" onclick="rundermap(this);" value="'+shipping+'" checked="checked" />';
+			     tpl+=shipping+'：'; 
+			     
+			 for(city in e[shipping])
+			 {shippingdata[shipping][city]={};
+			  tpl+='<br/>';
+              tpl+=city+'：';
+              var ii=0;
+              for(i in e[shipping][city])
+              {
+            	  shippingdata[shipping][city][i]={};
+            	  ii++;
+           	   tpl+=ii+e[shipping][city][i]['region_name']+',';
+           	   
+           	  var points=disposePoints(e[shipping][city][i]['region_coord']);
+          
+           	  var polygon = new BMap.Polygon(points.obj
+           		   ,{strokeColor:color
+           		   ,strokeWeight:2
+           		   ,strokeOpacity:0.8
+           		   ,fillColor:color
+           		   ,fillOpacity:0.4
+           		   ,strokeStyle:'dashed'
+           		   ,enableMassClear:false});  //创建多边形
+           	 
+           		   shippingdata[shipping][city][i]['p']= polygon;
+           		
+           	   map.addOverlay(polygon);   //增加多边形
+
+           	  var centroid = d3.geom.polygon(points.array).centroid();
+
+           	  var opts = {
+           				  position : new BMap.Point(centroid[0],centroid[1]),    // 指定文本标注所在的地理位置
+           				  offset   : new BMap.Size(-20, 0),    //设置文本偏移量
+           				  enableMassClear:false
+           				}
+           	 var label = new BMap.Label(e[shipping][city][i]['region_name'], opts);  // 创建文本标注对象
+           					label.setStyle({
+           						 color : color,
+           						 fontSize : "12px",
+           						 height : "20px",
+           						 lineHeight : "20px",
+           						 fontFamily:"微软雅黑",
+           					     opacity: 0.7
+           					 });
+           					label.setZIndex(0);
+           	shippingdata[shipping][city][i]['l']= label;
+           	map.addOverlay(label);   
+           //	e[shipping][city][i].children=e[shipping][city][i].children||false;
+           shippingdata[shipping][city][i]["children"]={}; 
+           if(e[shipping][city][i]["children"]){
+            	
+            	shippingdata[shipping][city][i]["children"]= e[shipping][city][i]["children"];
+            	
+            for(ii in e[shipping][city][i]["children"])
+            {
+            	var child=e[shipping][city][i]["children"][ii];
+        // console.log('childlocation',child);
+            	  var opts = {
+           				  position : new BMap.Point(child["local"][0],child["local"][1]),    // 指定文本标注所在的地理位置
+           				  offset   : new BMap.Size(-20, 0),    //设置文本偏移量
+           				  enableMassClear:false
+           				}
+           	 var label2 = new BMap.Label(child['region_name'], opts);  // 创建文本标注对象
+           					label2.setStyle({
+           						 color : color,
+           						 fontSize : "9px",
+           						 height : "13px",
+           						 lineHeight : "13px",
+           						 fontFamily:"微软雅黑",
+           					     opacity: 0.7,
+           					     border:"1px dashed #F00"
+           					 });
+           					label2.setZIndex(0);
+           	shippingdata[shipping][city][i]["children"][ii]['l']=label2;
+           	map.addOverlay(label2);   
+            	
+            }
+            }
+              
+              }
+             
+			 }
+			  tpl+='<br/>';
+			 }
+			 $("#"+id).html(tpl);
+			 }
+  });   
+	
+}
+function rundermap(obj){
+
+	    	var $shipping=$(obj).val();
+	    		 for(city in shippingdata[$shipping])
+	    		 {
+	    			 for(i in shippingdata[$shipping][city])
+	    		     {
+	    				 if(obj.checked){	
+	    					 map.addOverlay(shippingdata[$shipping][city][i]['p']);
+	    					 map.addOverlay(shippingdata[$shipping][city][i]['l']);
+	    					 
+	    					 for(ii in shippingdata[$shipping][city][i]['children'])
+	    	    		     {
+
+		    					 map.addOverlay(shippingdata[$shipping][city][i]['children'][ii]['l']);
+	    						 
+	    	    		     }
+	    					 
+	    			    }else
+	    			    	{
+	    			    	 map.removeOverlay(shippingdata[$shipping][city][i]['p']);
+	    			    	 map.removeOverlay(shippingdata[$shipping][city][i]['l']);
+	    			    	 
+	    			    	 for(ii in shippingdata[$shipping][city][i]['children'])
+	    	    		     {
+		    					 map.removeOverlay(shippingdata[$shipping][city][i]['children'][ii]['l']);	 
+	    	    		     }
+	    			    	 
+	    			    	}
+	    		     }
+	    		}
+
+}
+function checkpoi(address,poi,callback){
+//console.log('checkpoi',poi);
+if(!poi){
+	$("#msg_shipping_address").html('位置查询失败，请修改地址!');
+	return;	
+}
+
+var url='/apiv3/index.php?route=lbs/shipping/hgetByLng&callback=?';
+$.getJSON(url,
+		 poi.location,
+		 function(e){checkaddress_callback(e,callback,poi);});  
+
+}
+
+function checkaddress_callback(e,callback,poi){
+
+	 if(e.status==1)
+		 {
+		  // _.toast('地址有效',2000);
+		  // $("#address_1").css('color','green');	
+//console.log('e',e);
+		    $("#msg_shipping_address").html(e.message+'['+e.data.shippingcode+e.data.city+e.data.region_name+']');
+		    $("#msg_shipping_address").css('color','green');
+		    
+		    if(poi.confidence){
+		    	if(poi.confidence < 60){
+		    	$("#msg_shipping_address").append('[可以信度：'+poi.confidence+']');
+		    	$("#msg_shipping_address").css('color','black');
+		    }
+		    else
+		    {
+		    	$("#msg_shipping_address").append('[可以信度：'+poi.confidence+']');
+		    }
+		 }
+		   
+
+		    var opts = {
+		    		  position : poi.location,    // 指定文本标注所在的地理位置
+		    		  offset   : new BMap.Size(10,-40)    //设置文本偏移量
+		    		}
+			var label = new BMap.Label(e.message+'['+e.data.city+e.data.region_name+']', opts);  // 创建文本标注对象
+			label.setStyle({
+				 color : "green",
+				 fontSize : "12px",
+				 height : "20px",
+				 lineHeight : "20px",
+				 fontFamily:"微软雅黑"
+			 });
+			label.setZIndex(1);
+		      map.addOverlay(label);   
+
+	       if(poi)
+	   	   $("#address_1_poi").val(JSON.stringify(poi));
+	       
+	       if(typeof(callback)=='function')
+	    	   {
+	    	   callback(e);
+	    	   }
+		    
+		 }
+	 else
+		 { 
+
+		  var opts = {
+	    		  position : poi.location,    // 指定文本标注所在的地理位置
+	    		  offset   : new BMap.Size(30, -30)    //设置文本偏移量
+	    		}
+		var label = new BMap.Label(e.message, opts);  // 创建文本标注对象
+		label.setStyle({
+			 color : "red",
+			 fontSize : "12px",
+			 height : "20px",
+			 lineHeight : "20px",
+			 fontFamily:"微软雅黑"
+		 });
+	      map.addOverlay(label);   
+		 
+		    $("#msg_shipping_address").html(e.message);
+	        $("#msg_shipping_address").css('color','red');
+		 }
+
+}
+</script>
+</body>
+</html>
